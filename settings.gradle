@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':wheel'
 rootProject.name='erp2011'
