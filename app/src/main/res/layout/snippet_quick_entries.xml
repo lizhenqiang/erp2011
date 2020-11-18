@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015. Xingyan, Ltd - All Rights Reserved
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited proprietary and
+  ~  confidential.
+  ~
+  ~ This file is originally created by San.
+  -->
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/page_vertical_spacing"
+        android:paddingLeft="@dimen/page_horizontal_spacing"
+        android:paddingRight="@dimen/page_horizontal_spacing"
+        android:paddingTop="@dimen/page_vertical_spacing">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:columnCount="@integer/apps_per_row"
+            app:useDefaultMargins="true">
+
+            <cc.xingyan.android.afc.widget.AppView
+                android:id="@+id/work_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:appIcon="@drawable/ic_workorder_black_48dp"
+                app:appName="@string/nav_work_order"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center" />
+
+            <cc.xingyan.android.afc.widget.AppView
+                android:id="@+id/cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:appIcon="@drawable/ic_cm_black_48dp"
+                app:appName="@string/nav_cm"
+                android:enabled="false"
+
+                app:layout_columnWeight="1"
+                app:layout_gravity="center" />
+
+            <cc.xingyan.android.afc.widget.AppView
+                android:id="@+id/pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:appIcon="@drawable/ic_pm_black_48dp"
+                app:appName="@string/nav_pm"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center" />
+
+            <cc.xingyan.android.afc.widget.AppView
+                android:id="@+id/di"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:appIcon="@drawable/ic_dayinspect_black_48dp"
+                app:appName="@string/nav_di"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center" />
+
+            <cc.xingyan.android.afc.widget.AppView
+                android:id="@+id/part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:appIcon="@drawable/ic_part_black_48dp"
+                app:appName="库存件"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center" />
+
+            <cc.xingyan.android.afc.widget.AppView
+                android:id="@+id/panku_report_management"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:appIcon="@drawable/ic_part_panku_black_48dp"
+                app:appName="盘库管理"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center" />
+
+            <cc.xingyan.android.afc.widget.AppView
+                android:id="@+id/sync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:appIcon="@drawable/ic_cloud_black_48dp"
+                app:appName="@string/nav_sync"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center" />
+
+            <cc.xingyan.android.afc.widget.AppView
+                android:id="@+id/yunshu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:appIcon="@drawable/ic_part_huopan_black_48dp"
+                app:appName="货盘运输"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center" />
+
+
+            <cc.xingyan.android.afc.widget.AppView
+                android:id="@+id/chart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:appIcon="@drawable/ic_chart_black_48dp"
+                app:appName="报表"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center" />
+
+
+        </android.support.v7.widget.GridLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

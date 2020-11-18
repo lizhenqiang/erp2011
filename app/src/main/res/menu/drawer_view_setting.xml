@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/set_pwd2"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/set_pwd" />
+        <item
+            android:id="@+id/set_test12"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/set_test1" />
+    </group>
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/set_test22"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="ceshi2" />
+    </group>
+</menu>

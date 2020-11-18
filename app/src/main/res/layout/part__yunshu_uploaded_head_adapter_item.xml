@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView
+    android:id="@+id/diwork_pm_adapter_card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="1dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_yunshu_id"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_cm2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="任务号码:"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/yunshu_uploaded_head_adapter_id_tx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@id/text_cm2"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        tools:text="运输任务号码" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_yunshu_date"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayout_yunshu_id">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="创建日期:"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/yunshu_uploaded_head_adapter_date_tx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:textSize="20sp"
+                        tools:text="运输创建日期" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_yunshu_packnumber"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayout_yunshu_date">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="装箱单号:"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/yunshu_uploaded_head_adapter_packnumber_tx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        tools:text="运输装箱单号" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayout_yunshu_from"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayout_yunshu_packnumber">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发送库位:"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/yunshu_uploaded_head_adapter_from_tx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        tools:text="运输发送库位" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_yunshu_to"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayout_yunshu_from">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="接收库位:"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/yunshu_uploaded_head_adapter_to_tx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        tools:text="运输接收库位" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

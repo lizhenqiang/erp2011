@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015. Xingyan, Ltd - All Rights Reserved
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited proprietary and
+  ~  confidential.
+  ~
+  ~ This file is originally created by San.
+  -->
+
+<resources>
+    <dimen name="page_horizontal_spacing">16dp</dimen>
+    <dimen name="page_vertical_spacing">16dp</dimen>
+    <dimen name="divider_1dp">1dp</dimen>
+    <dimen name="divider_5dp">5dp</dimen>
+    <dimen name="elevation_1dp">1dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

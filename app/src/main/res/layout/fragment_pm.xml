@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2015. Xingyan, Ltd - All Rights Reserved
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited proprietary and
+  ~  confidential.
+  ~
+  ~ This file is originally created by San.
+  -->
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            app:tabBackground="@color/cardview_light_background"
+            app:tabIndicatorColor="?colorAccent"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="fixed"
+            app:tabPadding="0dp"
+            app:tabSelectedTextColor="?colorAccent" />
+
+        <androidx.core.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floating_action_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/page_horizontal_spacing"
+        app:menu_colorNormal="@color/accent"
+        app:menu_colorPressed="@color/accent"
+        app:menu_colorRipple="@color/accent">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/action_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_scan_white_24dp"
+            app:fab_colorNormal="@color/accent"
+            app:fab_colorPressed="@color/accent"
+            app:fab_colorRipple="@color/accent"
+            app:fab_label="@string/action_scan_pm"
+            app:fab_size="mini"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/pm_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pm_white_24dp"
+            app:fab_colorNormal="@color/accent"
+            app:fab_colorPressed="@color/accent"
+            app:fab_colorRipple="@color/primary"
+            app:fab_label="查询PM工单"
+            app:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</android.support.design.widget.CoordinatorLayout>

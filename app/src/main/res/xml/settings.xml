@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:title="@string/change_password">
+        <intent
+            android:targetClass="cc.xingyan.android.afc.ChangePasswordActivity"
+            android:targetPackage="com.biizy.android.erg" />
+    </Preference>
+
+    <Preference
+        android:key="updates"
+        android:title="@string/check_updates" />
+
+    <Preference
+        android:title="工单提醒间隔">
+        <intent
+            android:targetClass="cc.xingyan.android.afc.ChangeWorkRemindActivity"
+            android:targetPackage="com.biizy.android.erg" />
+    </Preference>
+    <Preference
+        android:key="getObjId"
+        android:title="获取日巡检ID">
+    </Preference>
+    <Preference
+        android:key="clearLocalCache"
+        android:title="清除工单数据">
+    </Preference>
+</PreferenceScreen>
+
+

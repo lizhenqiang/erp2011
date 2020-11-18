@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015. Xingyan, Ltd - All Rights Reserved
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited proprietary and
+  ~  confidential.
+  ~
+  ~ This file is originally created by San.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="?android:selectableItemBackground"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/icon_part"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:tint="@color/icons_inverse"
+        tools:src="@drawable/ic_pm_black_24dp" />
+    <TextView
+        android:id="@+id/name_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon_part"
+        android:layout_marginLeft="5dp"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="20sp"
+        android:text="零件"/>
+
+
+</RelativeLayout>

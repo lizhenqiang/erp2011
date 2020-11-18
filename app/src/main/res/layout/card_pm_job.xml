@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015. Xingyan, Ltd - All Rights Reserved
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited proprietary and
+  ~  confidential.
+  ~
+  ~ This file is originally created by San.
+  -->
+
+<android.support.v7.widget.CardView
+    android:id="@+id/card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_pm_card"
+            style="@style/Widget.Afc.Toolbar.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?colorPrimary"
+            android:theme="@style/Theme.Afc.Card"
+            app:popupTheme="@style/Theme.AppCompat.Light"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_device_number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                <TextView
+                    android:id="@+id/device_code_pm_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/text1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="230219237" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text1">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/hint_device_name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <TextView
+                        android:id="@+id/device_name_pm_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@id/text2"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        tools:text="设备1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayout_physic_number"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayout1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hint_physic__number"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+
+                    <TextView
+                        android:id="@+id/physic_number_pm_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        tools:text="1001000001-100" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_physic_name"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayout_physic_number">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hint_physic__name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <TextView
+                        android:id="@+id/physic_name_pm_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        tools:text="物理设备" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/remaining_job_items_pm_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayout_physic_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    tools:text="@string/format_remaining_job_items" />
+
+                <TextView
+                    android:id="@+id/remaining_days_pm_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/remaining_job_items_pm_card"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                    android:visibility="gone"
+
+                    tools:text="@string/format_remaining_days"
+                    />
+
+                <TextView
+                    android:id="@+id/out_tx_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/remaining_days_pm_card"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                    android:visibility="gone"
+
+                    tools:text="@string/format_pm_job_outdated_tx"
+                    />
+
+                <TextView
+                    android:id="@+id/out_days_pm_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/remaining_days_pm_card"
+                    android:layout_toRightOf="@id/out_tx_1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                    android:visibility="gone"
+
+                    tools:text="@string/format_pm_job_outdated"
+                    />
+
+
+                <TextView
+                    android:id="@+id/out_tx_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/remaining_days_pm_card"
+                    android:layout_toRightOf="@id/out_days_pm_card"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                    android:visibility="gone"
+
+                    tools:text="@string/format_pm_job_outdated_day"
+                    />
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/pm_apply_start_time_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/remaining_job_items_pm_card"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                    android:text="@string/hint_apply_start_time"
+                    />
+
+                <TextView
+                    android:id="@+id/pm_apply_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/remaining_job_items_pm_card"
+                    android:layout_toRightOf="@id/pm_apply_start_time_tx"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+
+                    />
+                <TextView
+                    android:id="@+id/pm_apply_end_time_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pm_apply_start_time_tx"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                    android:text="@string/hint_apply_end_time"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/pm_apply_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/pm_apply_start_time"
+                    android:layout_toRightOf="@id/pm_apply_end_time_tx"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:visibility="gone"
+
+                    />
+                <TextView
+                    android:id="@+id/pm_plan_start_time_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pm_apply_end_time_tx"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                    android:text="@string/hint_plan_start_time"
+                    />
+
+                <TextView
+                    android:id="@+id/pm_plan_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/pm_apply_end_time"
+                    android:layout_toRightOf="@id/pm_plan_start_time_tx"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+
+                    />
+
+
+
+
+                <TextView
+                    android:id="@+id/pm_plan_end_time_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pm_plan_start_time_tx"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                    android:text="@string/hint_plan_end_time"
+                    />
+
+                <TextView
+                    android:id="@+id/pm_plan_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/pm_plan_start_time_tx"
+                    android:layout_toRightOf="@id/pm_plan_end_time_tx"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+
+                    />
+
+
+
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/checkbox_pm_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

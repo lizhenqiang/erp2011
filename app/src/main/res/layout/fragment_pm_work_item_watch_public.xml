@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/pm_work_item_operation_end_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/pm_work_item_operation_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="@string/hint_operation_end_time"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/pm_work_item_operation_start_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pm_work_item_operation_end_time_layout"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/pm_work_item_operation_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="@string/hint_operation_start_time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ListView
+        android:id="@+id/pm_work_item_watch_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/pm_work_item_operation_start_time_layout"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+
+
+
+</RelativeLayout>

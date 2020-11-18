@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_tf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/diwork_pm_adapter_item_content_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/diwork_pm_adapter_item_content_tf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AG当前时间与上位SC服务器时间差异是否正常"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/diwork_pm_adapter_item_content_layout"
+            android:layout_weight="3">
+            <TextView
+                android:id="@+id/diwork_pm_adapter_item_content_input_tf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"
+                android:text="T"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_not_tf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/diwork_pm_adapter_item_content_layout_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/diwork_pm_adapter_item_content_not_tf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P配电柜上显示上显示上显示的电压值"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/diwork_pm_adapter_item_content_layout_2"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/diwork_pm_adapter_item_content_input_not_tf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_marginLeft="20dp"
+                android:text="输出变压器输出变压器"/>
+
+            <TextView
+                android:id="@+id/diwork_pm_adapter_item_content_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_marginLeft="5dp"
+                android:text="V"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

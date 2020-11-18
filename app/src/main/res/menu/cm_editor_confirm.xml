@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/set"
+        android:icon="@drawable/ic_more_vert_white_18dp"
+        android:title="@string/set"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/cm_confirm"
+                android:icon="@drawable/ic_done_white_24dp"
+                android:title="@string/cm_confirm"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/cm_cancel"
+                android:icon="@drawable/ic_done_white_24dp"
+                android:title="@string/cm_cancel"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

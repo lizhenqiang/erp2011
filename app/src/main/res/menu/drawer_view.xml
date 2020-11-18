@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015. Xingyan, Ltd - All Rights Reserved
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited proprietary and
+  ~  confidential.
+  ~
+  ~ This file is originally created by San.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_workorder"
+            android:icon="@drawable/ic_workorder_black_24dp"
+            android:title="@string/nav_work_order" />
+        <item
+            android:id="@+id/nav_cm"
+            android:icon="@drawable/ic_cm_black_24dp"
+            android:title="@string/nav_cm" />
+        <item
+            android:id="@+id/nav_pm"
+            android:icon="@drawable/ic_pm_black_24dp"
+            android:title="@string/nav_pm" />
+        <item
+            android:id="@+id/nav_di"
+            android:icon="@drawable/ic_dayinspect_black_24dp"
+            android:title="@string/nav_di" />
+        <item
+            android:id="@+id/nav_part"
+            android:icon="@drawable/ic_part_black_48dp"
+            android:title="库存件" />
+        <item
+            android:id="@+id/nav_chart"
+            android:icon="@drawable/ic_edit_black_24dp"
+            android:title="报表" />
+    </group>
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_sync"
+            android:icon="@drawable/ic_cloud_black_24dp"
+            android:title="@string/nav_sync" />
+    </group>
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/nav_settings" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/nav_logout" />
+    </group>
+
+</menu>

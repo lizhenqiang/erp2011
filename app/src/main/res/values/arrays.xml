@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015. Xingyan, Ltd - All Rights Reserved
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited proprietary and
+  ~  confidential.
+  ~
+  ~ This file is originally created by San.
+  -->
+
+<resources>
+    <string-array name="work_order_kinds">
+        <item>@string/work_order_kind_local</item>
+        <item>@string/work_order_kind_synchronized</item>
+    </string-array>
+    <string name="work_order_kind_local">未同步</string>
+    <string name="work_order_kind_synchronized">已同步</string>
+    <string-array name="pm_job_kinds">
+        <item>@string/pm_kind_downloaded</item>
+        <item>@string/pm_kind_maintained</item>
+        <item>@string/pm_kind_done</item>
+        <item>@string/pm_kind_uploaded</item>
+    </string-array>
+
+    <string name="pm_kind_downloaded">新下载</string>
+    <string name="pm_kind_maintained">待维护</string>
+    <string name="pm_kind_done">已完成</string>
+    <string name="pm_kind_uploaded">已上传</string>
+
+    <string name="cm_kind_local">未同步</string>
+    <string name="cm_kind_synchronized">已同步</string>
+
+    <string-array name="day_inspect_kinds">
+        <item>@string/day_inspect_kind_ongoing</item>
+        <item>@string/day_inspect_kind_done</item>
+        <item>@string/day_inspect_kind_uploaded</item>
+    </string-array>
+    <string name="day_inspect_kind_ongoing">进行中</string>
+    <string name="day_inspect_kind_done">已完成</string>
+    <string name="day_inspect_kind_uploaded">已上传</string>
+
+    <string-array name="cm_kinds">
+        <item>@string/cm_kind_new</item>
+        <item>@string/cm_kind_faultreport</item>
+        <item>@string/cm_kind_released</item>
+        <item>@string/cm_kind_workdone</item>
+        <item>@string/cm_kind_workdoneupload</item>
+        <item>@string/cm_kind_finish</item>
+    </string-array>
+    <string name="cm_kind_new">新创建</string>
+    <string name="cm_kind_faultreport">故障报告</string>
+    <string name="cm_kind_released">已下达</string>
+    <string name="cm_kind_workdone">已完成</string>
+    <string name="cm_kind_workdoneupload">完工（已上传）</string>
+    <string name="cm_kind_finish">取消</string>
+
+    <string-array name="maintenance_type">
+        <item>@string/maintenance_type_state</item>
+        <item>@string/maintenance_type_plan</item>
+        <item>@string/maintenance_type_null</item>
+    </string-array>
+
+    <string name="maintenance_type_state">故障修</string>
+    <string name="maintenance_type_plan">计划修</string>
+    <string name="maintenance_type_null">&#60;Null&#62;</string>
+
+</resources>

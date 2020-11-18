@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="1dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarforpart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        toolbar:title="货盘运输"
+        toolbar:titleTextColor="@color/white"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/act_yunshu_uploadeddetal_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:tabMode="scrollable" />
+
+    <androidx.core.view.ViewPager
+        android:id="@+id/act_yunshu_uploadeddetal_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/act_yunshu_uploadeddetal_tab_layout"/>
+
+</LinearLayout>

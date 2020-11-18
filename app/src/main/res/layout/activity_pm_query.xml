@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_theme"
+    android:scrollbarThumbVertical="@drawable/thumb01"
+    android:scrollbarThumbHorizontal="@drawable/thumb01"
+    android:scrollbarSize="5px"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/icons"
+                android:textSize="16sp"
+                android:text="PM工单查询"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/title_layout"
+            android:layout_height="2dp"
+
+            android:background="#87CEFA">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pm_id_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_below="@id/title_layout"
+            android:paddingTop="5dp"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="计划任务单号："
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/icons"/>
+
+            <cc.xingyan.android.afc.util.ClearableEditText
+                android:id="@+id/pm_query_order_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:drawableRight="@drawable/ic_close_black_24dp"
+                android:maxLength="10"
+                android:textSize="15sp"
+                android:inputType="number"
+                app:right_drawable_color="?attr/colorAccent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/pm_id_layout"
+            android:layout_height="2dp"
+            android:background="#87CEFA">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_below="@id/pm_id_layout"
+            android:paddingTop="5dp"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="逻辑设备编码："
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/icons"/>
+
+            <cc.xingyan.android.afc.util.ClearableEditText
+                android:id="@+id/pm_query_logic_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:drawableRight="@drawable/ic_close_black_24dp"
+                android:maxLength="10"
+                android:textSize="15sp"
+                android:digits="0123456789QWERTYUIOPLKJHGFDSAZXCVBNM-"
+                app:right_drawable_color="?attr/colorAccent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/first"
+            android:layout_height="2dp"
+            android:background="#87CEFA">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second"
+            android:layout_below="@id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="逻辑设备名称："
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/icons"/>
+            <cc.xingyan.android.afc.util.ClearableEditText
+                android:id="@+id/pm_query_logic_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:drawableRight="@drawable/ic_close_black_24dp"
+                android:maxLength="10"
+                android:textSize="15sp"
+                app:right_drawable_color="?attr/colorAccent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/second"
+            android:layout_height="2dp"
+            android:background="#87CEFA">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third"
+            android:layout_below="@id/second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物理设备编码："
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/icons"/>
+            <cc.xingyan.android.afc.util.ClearableEditText
+                android:id="@+id/pm_query_physical_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:drawableRight="@drawable/ic_close_black_24dp"
+                android:maxLength="10"
+                android:textSize="15sp"
+                android:digits="0123456789-"
+                app:right_drawable_color="?attr/colorAccent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/third"
+            android:layout_height="2dp"
+            android:background="#87CEFA">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fourth"
+            android:layout_below="@id/third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物理设备名称："
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/icons"/>
+            <cc.xingyan.android.afc.util.ClearableEditText
+                android:id="@+id/pm_query_physical_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:drawableRight="@drawable/ic_close_black_24dp"
+                android:maxLength="10"
+                android:textSize="15sp"
+                app:right_drawable_color="?attr/colorAccent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/fourth"
+            android:layout_height="2dp"
+            android:background="#87CEFA">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fifth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:minHeight="40dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/fourth">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请开始时间："
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/icons"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <cc.xingyan.android.afc.util.ClearableEditText
+                    android:id="@+id/pm_query_apply_start_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:drawableRight="@drawable/ic_close_black_24dp"
+                    android:textSize="15sp"
+                    android:editable="false"
+                    android:hint="大于等于"
+                    app:right_drawable_color="?attr/colorAccent"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/fifth"
+            android:layout_height="2dp"
+            android:background="#87CEFA">
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sixth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:minHeight="40dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/fifth">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="计划开始时间："
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/icons"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <cc.xingyan.android.afc.util.ClearableEditText
+                    android:id="@+id/pm_query_plan_start_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:drawableRight="@drawable/ic_close_black_24dp"
+                    android:textSize="15sp"
+                    android:editable="false"
+                    android:hint="大于等于"
+                    app:right_drawable_color="?attr/colorAccent"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/sixth"
+            android:layout_height="2dp"
+            android:background="#87CEFA">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/seventh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:minHeight="40dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/sixth">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="计划结束时间："
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/icons"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <cc.xingyan.android.afc.util.ClearableEditText
+                    android:id="@+id/pm_query_plan_end_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:drawableRight="@drawable/ic_close_black_24dp"
+                    android:textSize="15sp"
+                    android:editable="false"
+                    android:hint="小于等于"
+                    app:right_drawable_color="?attr/colorAccent"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/seventh"
+            android:layout_height="2dp"
+            android:background="#87CEFA">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notice_layout"
+            android:layout_below="@id/seventh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/weipan_img"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/pm_query_note"
+                android:textSize="14sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/icons"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/notice_layout"
+            android:minHeight="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/pm_query_ok"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_btn_selector"
+                android:text="确     定"
+                android:layout_marginBottom="20dp"/>
+            <Button
+                android:id="@+id/pm_query_cancel"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_btn_selector"
+                android:text="取     消"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

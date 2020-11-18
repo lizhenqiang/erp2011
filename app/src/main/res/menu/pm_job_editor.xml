@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015. Xingyan, Ltd - All Rights Reserved
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited proprietary and
+  ~  confidential.
+  ~
+  ~ This file is originally created by San.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/set"
+        android:icon="@drawable/ic_more_vert_white_18dp"
+        android:title="@string/set"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/pm_work_item_action_done_"
+                android:icon="@drawable/ic_done_white_24dp"
+                android:title="@string/action_done"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/pm_change"
+                android:icon="@drawable/ic_done_white_24dp"
+                android:title="@string/change_dispose"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

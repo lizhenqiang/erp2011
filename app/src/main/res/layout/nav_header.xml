@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015. Xingyan, Ltd - All Rights Reserved
+  ~
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited proprietary and
+  ~  confidential.
+  ~
+  ~ This file is originally created by San.
+  -->
+
+<RelativeLayout
+    android:id="@+id/nav_header"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/primary"
+    android:fitsSystemWindows="true"
+    android:paddingBottom="@dimen/page_horizontal_spacing"
+    android:paddingLeft="@dimen/page_horizontal_spacing"
+    android:paddingRight="@dimen/page_horizontal_spacing"
+    android:paddingTop="@dimen/page_horizontal_spacing"
+    app:roundAsCircle="true"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+<!--    androidx中该控件崩溃用imageview替换 2020.11.18 -->
+<!--    <com.facebook.drawee.view.SimpleDraweeView-->
+<!--        android:id="@+id/user_avatar"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        app:placeholderImage="@drawable/ic_avatar_white_48dp"-->
+<!--        app:placeholderImageScaleType="centerCrop" />-->
+
+    <ImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_avatar_white_48dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/user_avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/user_avatar"
+        android:text="张三"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/connection_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/user_avatar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@android:color/white"
+        android:text="在线" />
+
+</RelativeLayout>

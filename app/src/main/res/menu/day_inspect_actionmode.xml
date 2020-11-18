@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/actionmode_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/actionmode_settings"/>
+
+    <item
+        android:id="@+id/actionmode_cancel"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/actionmode_cancel"/>
+
+    <item
+        android:id="@+id/actionmode_test"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/actionmode_test"/>
+</menu>

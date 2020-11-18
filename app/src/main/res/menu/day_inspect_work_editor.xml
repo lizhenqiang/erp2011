@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/set"
+        android:icon="@drawable/ic_more_vert_white_18dp"
+        android:title="@string/set"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/di_work_change"
+                android:icon="@drawable/ic_cm_black_24dp"
+                android:title="@string/change_dispose"
+
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+</menu>

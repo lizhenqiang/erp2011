@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/yunshu_noupload_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="invisible"
+        app:tabMode="scrollable" />
+
+    <LinearLayout
+        android:id="@+id/new_transport_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <cc.xingyan.android.afc.widget.AppView
+            android:id="@+id/yunshu_noupload_new_transport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80ffffff"
+            app:appIcon="@drawable/ic_part_huopan_black_48dp"
+            app:appName="新建运输"
+            app:layout_columnWeight="1"
+            app:layout_gravity="center" />
+
+        <cc.xingyan.android.afc.widget.AppView
+            android:id="@+id/yunshu_toupload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80ffffff"
+            android:layout_marginLeft="30dp"
+            app:appIcon="@drawable/ic_part_chuku_black_48dp"
+            app:appName="上传运输"
+            app:layout_columnWeight="1"
+            app:layout_gravity="center" />
+
+        <cc.xingyan.android.afc.widget.AppView
+            android:id="@+id/yunshu_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80ffffff"
+            android:layout_marginLeft="30dp"
+            app:appIcon="@drawable/ic_delete_black_24dp"
+            app:appName="删除运输"
+            app:layout_columnWeight="1"
+            app:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <androidx.core.view.ViewPager
+        android:id="@+id/yunshu_noupload_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_below="@id/yunshu_noupload_tab_layout"
+        android:layout_above="@id/new_transport_layout"/>
+
+
+</RelativeLayout>
