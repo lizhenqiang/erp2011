@@ -1,0 +1,36 @@
+{
+  "fields": [
+    {
+      "name": "cm_order_id",
+      "type": "String"
+    },
+    {
+      "name": "material_order_id",
+      "type": "String"
+    },
+    {
+      "name": "user",
+      "type": "String"
+    },
+    {
+      "name": "department",
+      "type": "String"
+    },
+    {
+      "name": "int_customer_no",
+      "type": "String"
+    },
+    {
+      "name": "enter_date",
+      "type": "Long"
+    },
+    {
+      "name": "due_date",
+      "type": "Long"
+    },
+    {
+      "name": "guid",
+      "type": "String"
+    }
+  ]
+}

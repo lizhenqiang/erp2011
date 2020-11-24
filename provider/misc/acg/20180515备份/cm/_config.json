@@ -1,0 +1,13 @@
+{
+  "syntaxVersion": "3",
+  "projectPackageId": "cc.xingyan.android.afc",
+  "authority": "com.biizy.android.erg.provider.cm",
+  "providerJavaPackage": "cc.xingyan.android.afc.provider",
+  "providerClassName": "CmProvider",
+  "sqliteOpenHelperClassName": "CmSQLiteOpenHelper",
+  "sqliteOpenHelperCallbacksClassName": "CmSQLiteOpenHelperCallbacks",
+  "databaseFileName": "cm.db",
+  "databaseVersion": 8,
+  "enableForeignKeys": true,
+  "useAnnotations": false
+}

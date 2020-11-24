@@ -1,0 +1,39 @@
+{
+  "fields": [
+    {
+      "name": "key_id",
+      "type": "String",
+      "comment": "标识号（工单号或巡检单号）"
+    },
+    {
+      "name": "type",
+      "type": "String",
+      "comment": "类型（工单CM快速工单RP故障检修PM离线检修RF）"
+    },
+    {
+      "name": "picture_id",
+      "type": "String",
+      "comment":"多张图片时图片id"
+    },
+    {
+      "name": "addr",
+      "type": "String",
+      "comment":"拍照位置信息"
+    },
+    {
+      "name": "url",
+      "type": "String",
+      "comment":"图片存储路径"
+    },
+    {
+      "name": "date_current",
+      "type": "Long",
+      "comment":"拍照时间"
+    } ,
+    {
+      "name": "remark",
+      "type": "String",
+      "comment":"备注"
+    }
+  ]
+}

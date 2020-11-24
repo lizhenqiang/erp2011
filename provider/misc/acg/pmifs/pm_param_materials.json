@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "name": "code",
+      "type": "String"
+    },
+    {
+      "name": "name",
+      "type": "String"
+    },
+    {
+      "name": "line",
+      "type": "String"
+    },
+    {
+      "name": "device",
+      "type": "String"
+    }
+  ]
+}

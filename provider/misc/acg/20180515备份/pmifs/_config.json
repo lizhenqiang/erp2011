@@ -1,0 +1,13 @@
+{
+  "syntaxVersion": "3",
+  "projectPackageId": "cc.xingyan.android.afc",
+  "authority": "com.biizy.android.erg.provider.pmifs",
+  "providerJavaPackage": "cc.xingyan.android.afc.provider",
+  "providerClassName": "PmifsProvider",
+  "sqliteOpenHelperClassName": "PmifsSQLiteOpenHelper",
+  "sqliteOpenHelperCallbacksClassName": "PmifsSQLiteOpenHelperCallbacks",
+  "databaseFileName": "pmifs.db",
+  "databaseVersion": 1,
+  "enableForeignKeys": true,
+  "useAnnotations": false
+}

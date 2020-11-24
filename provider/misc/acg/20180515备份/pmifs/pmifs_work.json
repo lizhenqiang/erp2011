@@ -1,0 +1,177 @@
+{
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "String",
+      "comment": "登录用户id"
+    },
+    {
+      "name": "guid",
+      "type": "String"
+    },
+    {
+      "name": "order_id",
+      "type": "String",
+      "comment": "pm工单号"
+    },
+    {
+      "name": "priority_text",
+      "type": "String",
+      "comment": "优先级内容"
+    },
+    {
+      "name": "priority_code",
+      "type": "String",
+      "comment": "优先级代码"
+    },
+    {
+      "name": "device_code",
+      "type": "String",
+      "comment": "物理设备编码"
+    },
+    {
+      "name": "device_name",
+      "type": "String",
+      "comment": "物理设备名称"
+    },
+    {
+      "name": "device_logic_code",
+      "type": "String",
+      "comment": "逻辑设备编码"
+    },
+    {
+      "name": "device_logic_name",
+      "type": "String",
+      "comment": "逻辑设备名称"
+    },
+    {
+      "name": "instruct",
+      "type": "String"
+    },
+    {
+      "name": "prepare_man_code",
+      "type": "String",
+      "comment": "准备人编号"
+    },
+    {
+      "name": "prepare_man_text",
+      "type": "String",
+      "comment": "准备人名称"
+    },
+    {
+      "name": "workarea_text",
+      "type": "String",
+      "comment": "工区名称"
+    },
+    {
+      "name": "workarea_code",
+      "type": "String",
+      "comment": "工区编码"
+    },
+    {
+      "name": "apply_s_time",
+      "type": "Long"
+    },
+    {
+      "name": "apply_f_time",
+      "type": "Long"
+    },
+    {
+      "name": "plan_s_time",
+      "type": "Long"
+    },
+    {
+      "name": "plan_f_time",
+      "type": "Long"
+    },
+    {
+      "name": "work_details_text",
+      "type": "String",
+      "comment": "已执行活动描述"
+    },
+    {
+      "name": "work_details_code",
+      "type": "String",
+      "comment": "已执行活动编码"
+    },
+    {
+      "name": "work_done_text",
+      "type": "String",
+      "comment": "工作完成情况描述"
+    },
+    {
+      "name": "work_done_code",
+      "type": "String",
+      "comment": "工作完成情况编码"
+    },
+    {
+      "name": "work_note",
+      "type": "String",
+      "comment": "工作详情描述"
+    },
+    {
+      "name": "operator_text",
+      "type": "String",
+      "comment": "执行人名称"
+    },
+    {
+      "name": "operator_code",
+      "type": "String",
+      "comment": "执行人编码"
+    },
+    {
+      "name": "operation_start_time",
+      "type": "Long",
+      "comment": "操作开始时间"
+    },
+    {
+      "name": "operation_end_time",
+      "type": "Long",
+      "comment": "操作完成时间"
+    },
+    {
+      "name": "order_receive_time",
+      "type": "Long",
+      "comment": "接单时间"
+    },
+    {
+      "name": "arrive_time",
+      "type": "Long",
+      "comment": "到达现场时间"
+    },
+    {
+      "name": "int_customer_no",
+      "type": "String",
+      "comment": "工号"
+    },
+    {
+      "name": "status_backstage",
+      "type": "String"
+    },
+    {
+      "name": "status",
+      "type": "enum",
+      "enumName": "PmifsWorkStatus",
+      "enumValues": [
+        "NEW",
+        "RELEASED",
+        "WORKDONE",
+        "WORKDONEUPLOAD"
+      ],
+      "defaultValue": 0
+    },
+    {
+      "name": "last_modified",
+      "type": "Long"
+    },
+    {
+      "name": "delete_pending",
+      "type": "Boolean",
+      "defaultValue": 0
+    },
+    {
+      "name": "upload_pending",
+      "type": "Boolean"
+    }
+  ]
+}

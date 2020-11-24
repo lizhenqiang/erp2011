@@ -1,0 +1,79 @@
+{
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "String"
+    },
+    {
+      "name": "guid",
+      "type": "String"
+    },
+    {
+      "name": "job_id",
+      "type": "String",
+      "comment": "标准化作业ID"
+    },
+    {
+      "name": "job_description",
+      "type": "String"
+    },
+    {
+      "name": "work_id",
+      "type": "String",
+      "comment": "PM作业ID"
+    },
+    {
+      "name": "work_kind",
+      "type": "String",
+      "comment": "年检｜季检｜月检"
+    },
+    {
+      "name": "device_code",
+      "type": "String",
+      "comment": "设备ID"
+    },
+    {
+      "name": "device_description",
+      "type": "String"
+    },
+    {
+      "name": "executor_id",
+      "type": "String"
+    },
+    {
+      "name": "executor_description",
+      "type": "String"
+    },
+    {
+      "name": "start_time",
+      "type": "Long"
+    },
+    {
+      "name": "end_time",
+      "type": "Long"
+    },
+    {
+      "name": "complete_time",
+      "type": "Long"
+    },
+    {
+      "name": "last_modified",
+      "type": "Long"
+    },
+    {
+      "name": "status",
+      "type": "enum",
+      "enumName": "PmWorkStatus",
+      "enumValues": [
+        "NEW",
+        "DONE",
+        "UPLOADED"
+      ],
+      "defaultValue": 0
+    },
+    {
+      "name": "upload_pending",
+      "type": "Boolean"
+    }
+  ]
+}

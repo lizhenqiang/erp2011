@@ -1,0 +1,16 @@
+{
+  "fields": [
+    {
+      "name": "item_guid",
+      "type": "String"
+    },
+    {
+      "name": "ordinal",
+      "type": "Integer"
+    },
+    {
+      "name": "value",
+      "type": "String"
+    }
+  ]
+}

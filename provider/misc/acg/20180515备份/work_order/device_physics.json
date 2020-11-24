@@ -1,0 +1,19 @@
+{
+  "fields": [
+    {
+      "name": "code",
+      "type": "String"
+    },{
+      "name": "code_physics",
+      "type": "String"
+    },
+    {
+      "name": "name",
+      "type": "String"
+    },
+    {
+      "name": "type",
+      "type": "String"
+    }
+  ]
+}

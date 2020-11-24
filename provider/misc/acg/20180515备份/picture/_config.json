@@ -1,0 +1,13 @@
+{
+  "syntaxVersion": "3",
+  "projectPackageId": "cc.xingyan.android.afc",
+  "authority": "com.biizy.android.erg.provider.picture",
+  "providerJavaPackage": "cc.xingyan.android.afc.provider",
+  "providerClassName": "pictureProvider",
+  "sqliteOpenHelperClassName": "pictureSQLiteOpenHelper",
+  "sqliteOpenHelperCallbacksClassName": "pictureSQLiteOpenHelperCallbacks",
+  "databaseFileName": "picture.db",
+  "databaseVersion": 1,
+  "enableForeignKeys": true,
+  "useAnnotations": false
+}

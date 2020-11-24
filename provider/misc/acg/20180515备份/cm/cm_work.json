@@ -1,0 +1,204 @@
+{
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "String"
+    },
+    {
+      "name": "guid",
+      "type": "String"
+    },
+    {
+      "name": "order_id",
+      "type": "String"
+    },
+    {
+      "name": "priority",
+      "type": "String"
+    },
+    {
+      "name": "device_code",
+      "type": "String"
+    },
+    {
+      "name": "device_name",
+      "type": "String"
+    },
+    {
+      "name": "fault_description_text",
+      "type": "String"
+    },
+    {
+      "name": "fault_description_code",
+      "type": "String"
+    },
+    {
+      "name": "fault_note",
+      "type": "String"
+    },
+
+    {
+      "name": "reporter_type_text",
+      "type": "String"
+    },
+    {
+      "name": "reporter_type_code",
+      "type": "String"
+    },
+    {
+      "name": "instruct",
+      "type": "String"
+    },
+    {
+      "name": "reporter",
+      "type": "String"
+    },
+    {
+      "name": "prepare_man",
+      "type": "String"
+    },
+    {
+      "name": "dispose",
+      "type": "String"
+    },
+    {
+      "name": "workarea",
+      "type": "String"
+    },
+    {
+      "name": "fault_start_time",
+      "type": "Long"
+    },
+    {
+      "name": "apply_s_time",
+      "type": "Long"
+    },
+    {
+      "name": "apply_f_time",
+      "type": "Long"
+    },
+    {
+      "name": "plan_s_time",
+      "type": "Long"
+    },
+    {
+      "name": "plan_f_time",
+      "type": "Long"
+    },
+    {
+      "name": "fault_grade_text",
+      "type": "String"
+    },
+    {
+      "name": "fault_grade_code",
+      "type": "String"
+    },
+    {
+      "name": "fault_type_text",
+      "type": "String"
+    },
+    {
+      "name": "fault_type_code",
+      "type": "String"
+    },
+    {
+      "name": "fault_cause_text",
+      "type": "String"
+    },
+    {
+      "name": "fault_cause_code",
+      "type": "String"
+    },
+    {
+      "name": "work_details_text",
+      "type": "String"
+    },
+    {
+      "name": "work_details_code",
+      "type": "String"
+    },
+    {
+      "name": "work_done_text",
+      "type": "String"
+    },
+    {
+      "name": "work_done_code",
+      "type": "String"
+    },
+    {
+      "name": "fault_cause_note",
+      "type": "String"
+    },
+    {
+      "name": "work_note",
+      "type": "String"
+    },
+    {
+      "name": "operator_text",
+      "type": "String"
+    },
+    {
+      "name": "operator_code",
+      "type": "String"
+    },
+    {
+      "name": "operation_start_time",
+      "type": "Long"
+    },
+    {
+      "name": "operation_end_time",
+      "type": "Long"
+    },
+    {
+      "name": "order_receive_time",
+      "type": "Long"
+    },
+    {
+      "name": "arrive_time",
+      "type": "Long"
+    },
+    {
+      "name": "int_customer_no",
+      "type": "String"
+    },
+    {
+      "name": "form_flag",
+      "type": "String"
+    },
+	{
+      "name": "equip_fault",
+      "type": "String"
+    },
+    {
+      "name": "status_backstage",
+      "type": "String"
+    },
+    {
+      "name": "status",
+      "type": "enum",
+      "enumName": "CmWorkStatus",
+      "enumValues": [
+        "NEW",
+        "FAULTREPORT",
+        "RELEASED",
+        "WORKDONE",
+        "WORKDONEUPLOAD",
+        "FINISH"
+      ],
+      "defaultValue": 0
+    },
+    {
+      "name": "last_modified",
+      "type": "Long"
+    },
+    {
+      "name": "delete_pending",
+      "type": "Boolean",
+      "defaultValue": 0
+    },
+    {
+      "name": "upload_pending",
+      "type": "Boolean"
+    }
+  ]
+}

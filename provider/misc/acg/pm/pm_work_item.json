@@ -1,0 +1,74 @@
+{
+  "fields": [
+    {
+      "name": "work_guid",
+      "type": "String"
+    },
+    {
+      "name": "package_id",
+      "type": "String",
+      "comment": "工作包ID"
+    },
+    {
+      "name": "package_description",
+      "type": "String",
+      "comment": "工作包描述"
+    },
+    {
+      "name": "guid",
+      "type": "String"
+    },
+    {
+      "name": "item_id",
+      "type": "String",
+      "comment": "工作项大ID"
+    },
+    {
+      "name": "description",
+      "type": "String"
+    },
+    {
+      "name": "ordinal",
+      "type": "Integer",
+      "comment": "作业内排序"
+    },
+    {
+      "name": "result_type",
+      "type": "String"
+    },
+    {
+      "name": "result_min_value",
+      "type": "Integer"
+    },
+    {
+      "name": "result_max_value",
+      "type": "Integer"
+    },
+    {
+      "name": "result_default_value",
+      "type": "String"
+    },
+    {
+      "name": "result_value_unit",
+      "type": "String"
+    },
+    {
+      "name": "result_enum_ordinal",
+      "type": "Integer",
+      "comment": "列表型结果值序号"
+    },
+    {
+      "name": "result_value",
+      "type": "String",
+      "coment": "结果值"
+    },
+    {
+      "name": "last_modified",
+      "type": "Long"
+    },
+    {
+      "name": "required",
+      "type": "Boolean"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "syntaxVersion": "3",
+  "projectPackageId": "cc.xingyan.android.afc",
+  "authority": "com.biizy.android.erg.provider.di",
+  "providerJavaPackage": "cc.xingyan.android.afc.provider",
+  "providerClassName": "DiProvider",
+  "sqliteOpenHelperClassName": "DiSQLiteOpenHelper",
+  "sqliteOpenHelperCallbacksClassName": "DiSQLiteOpenHelperCallbacks",
+  "databaseFileName": "di.db",
+  "databaseVersion": 1,
+
+  "enableForeignKeys": true,
+  "useAnnotations": false
+}

@@ -1,0 +1,47 @@
+{
+  "fields": [
+    {
+      "name": "work_guid",
+      "type": "String"
+    },
+    {
+      "name": "station_id",
+      "type": "String",
+      "comment": "车站"
+    },
+    {
+      "name": "station_description",
+      "type": "String",
+      "comment": "车站名"
+    },
+    {
+      "name": "device_id",
+      "type": "String"
+    },
+    {
+      "name": "device_description",
+      "type": "String"
+    },
+    {
+      "name": "device_system",
+      "type": "String"
+    },
+    {
+      "name": "guid",
+      "type": "String"
+    },
+    {
+      "name": "result_ordinal",
+      "type": "Integer",
+      "comment": "值序号"
+    },
+    {
+      "name": "result_value",
+      "type": "String"
+    },
+    {
+      "name": "last_modified",
+      "type": "Long"
+    }
+  ]
+}

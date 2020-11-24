@@ -1,0 +1,40 @@
+{
+  "fields": [
+    {
+      "name": "cm_work_id",
+      "type": "String"
+    },
+    {
+      "name": "order_id",
+      "type": "String"
+    },
+    {
+      "name": "part_id",
+      "type": "String"
+    },
+    {
+      "name": "part_description",
+      "type": "String"
+    },
+    {
+      "name": "apply_date",
+      "type": "Integer"
+    },
+    {
+      "name": "install_date",
+      "type": "Integer"
+    },
+    {
+      "name": "old_part_sn",
+      "type": "String"
+    },
+    {
+      "name": "new_part_sn",
+      "type": "String"
+    },
+    {
+      "name": "spare_part_status",
+      "type": "Integer"
+    }
+  ]
+}

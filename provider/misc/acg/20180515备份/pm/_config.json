@@ -1,0 +1,13 @@
+{
+  "syntaxVersion": "3",
+  "projectPackageId": "cc.xingyan.android.afc",
+  "authority": "com.biizy.android.erg.provider.pm",
+  "providerJavaPackage": "cc.xingyan.android.afc.provider",
+  "providerClassName": "PmProvider",
+  "sqliteOpenHelperClassName": "PmSQLiteOpenHelper",
+  "sqliteOpenHelperCallbacksClassName": "PmSQLiteOpenHelperCallbacks",
+  "databaseFileName": "pm.db",
+  "databaseVersion": 1,
+  "enableForeignKeys": true,
+  "useAnnotations": false
+}

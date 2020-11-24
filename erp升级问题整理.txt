@@ -1,0 +1,21 @@
+Q1 :java.lang.ClassNotFoundException: Didn't find class "android.support.v4.widget.DrawerLayout"
+A1:androidx.drawerlayout.widget.DrawerLayout 替换 android.support.v4.widget.DrawerLayout
+
+Q2:java.lang.ClassNotFoundException: Didn't find class "android.support.v4.widget.DrawerLayout"
+A2:com.google.android.material.navigation.NavigationView 替换 android.support.design.widget.NavigationView,headerlayout里面的com.facebook.drawee.view.SimpleDraweeView改为Imageview
+
+Q3:java.lang.ClassNotFoundException: Didn't find class "android.support.v7.widget.Toolbar"
+A3:androidx.appcompat.widget.Toolbar 替换 android.support.v7.widget.Toolbar
+
+Q4:警告: [deprecation] Resources中的getXXX(int)已过时
+A4: 用ContextCompat.getColor(context, id)方法。
+
+
+Q5:java.lang.ClassNotFoundException: Didn't find class "android.support.design.widget.ScrollView"
+A5:androidx.core.widget.NestedScrollView 替换 android.support.design.widget.ScrollView
+
+Q6: Error inflating class android.support.design.widget.TextInputLayout
+A6:com.google.android.material.textfield.TextInputLayout 替换 android.support.design.widget.TextInputLayout
+
+Q7: com.google.android.material.navigation.NavigationView 的headerView空指针
+A7: 通过findviewById或者butterknife获取不到NavigationView中的headerView,可以通过NavigationView的getHeaderView(int index)获取

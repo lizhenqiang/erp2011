@@ -1,0 +1,63 @@
+{
+  "fields": [
+  {
+      "name": "user_id",
+      "type": "String"
+    },
+  {
+      "name": "WoNo",
+      "type": "String"
+    },
+    {
+      "name": "RounddefId",
+      "type": "String"
+    },
+    {
+      "name": "Descr",
+      "type": "String"
+    },
+    {
+      "name": "RequiredStartDate",
+      "type": "Long"
+    },
+    {
+      "name": "PlanStartDate",
+      "type": "Long"
+    },
+    {
+      "name": "PlanFinishDate",
+      "type": "Long"
+    },
+    {
+      "name": "Signature",
+      "type": "String"
+    },
+	  {
+      "name": "Sign",
+      "type": "String"
+    },
+    {
+      "name": "DeviceCount",
+      "type": "String"
+    },
+	 {
+       "name": "upload_pending",
+      "type": "Boolean"
+    },
+	{
+       "name": "isConfirm",
+      "type": "Boolean"
+    },
+	{
+      "name": "status",
+      "type": "enum",
+      "enumName": "DiIfsStatus",
+      "enumValues": [
+        "NEW",
+        "DONE",
+        "UPLOADED"
+      ],
+      "defaultValue": 0
+    }
+  ]
+}

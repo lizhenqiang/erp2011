@@ -1,0 +1,116 @@
+{
+  "fields": [
+    {
+      "name": "code",
+      "type": "String"
+    },
+    {
+      "name": "name",
+      "type": "String"
+    },
+    {
+      "name": "data_start",
+      "type": "Long"
+    },
+    {
+      "name": "data_end",
+      "type": "Long"
+    },
+    {
+      "name": "last_rece_num",
+      "type": "String"
+    },
+    {
+      "name": "currect_rece_num",
+      "type": "String"
+    },
+    {
+      "name": "rece_lrr",
+      "type": "String"
+    },
+    {
+      "name": "last_form_num",
+      "type": "String"
+    },
+    {
+      "name": "currect_form_num",
+      "type": "String"
+    },
+    {
+      "name": "form_lrr",
+      "type": "String"
+    },
+    {
+      "name": "last_form_delay",
+      "type": "String"
+    },
+    {
+      "name": "currect_form_delay",
+      "type": "String"
+    },
+    {
+      "name": "form_delay_lrr",
+      "type": "String"
+    },
+    {
+      "name": "ytd_rece_num",
+      "type": "String"
+    },
+    {
+      "name": "rece_per",
+      "type": "String"
+    },
+    {
+      "name": "form_per",
+      "type": "String"
+    },
+    {
+      "name": "ag_num",
+      "type": "String"
+    },
+    {
+      "name": "bom_num",
+      "type": "String"
+    },
+    {
+      "name": "tvm_num",
+      "type": "String"
+    },
+    {
+      "name": "other_num",
+      "type": "String"
+    },
+    {
+      "name": "ag_per",
+      "type": "String"
+    },
+    {
+      "name": "bom_per",
+      "type": "String"
+    },
+    {
+      "name": "tvm_per",
+      "type": "String"
+    },
+    {
+      "name": "other_per",
+      "type": "String"
+    },
+    {
+      "name": "device_fault_num",
+      "type": "String"
+    },
+    {
+      "name": "device_fault_per",
+      "type": "String"
+    },
+    {
+      "name": "not_device_fault_num",
+      "type": "String"
+    },
+    {
+      "name": "not_device_fault_per",
+      "type": "String"
+    }
+  ]
+}

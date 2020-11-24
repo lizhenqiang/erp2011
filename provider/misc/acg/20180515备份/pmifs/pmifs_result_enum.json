@@ -1,0 +1,19 @@
+{
+  "fields": [
+    {
+      "name": "item_guid",
+      "type": "String",
+      "comment": "所属工作项guid"
+    },
+    {
+      "name": "sn",
+      "type": "Integer",
+      "comment": "枚举序号id"
+    },
+    {
+      "name": "value",
+      "type": "String",
+      "comment": "工作项结果"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "fields": [
+  {
+      "name": "user_id",
+      "type": "String"
+    },
+    {
+      "name": "report_no",
+      "type": "String"
+    },
+    {
+      "name": "part_no",
+      "type": "String"
+    },
+    {
+      "name": "part_name",
+      "type": "String"
+    },
+    {
+      "name": "actual_amount",
+      "type": "String"
+    },
+    {
+      "name": "lotBatch_no",
+      "type": "String"
+    },
+    {
+      "name": "line_no",
+      "type": "String"
+    },
+	  {
+      "name": "part_seq",
+      "type": "String"
+    },
+    {
+      "name": "warehouse_no",
+      "type": "String"
+    },
+    {
+      "name": "warehouse_name",
+      "type": "String"
+    },
+    {
+      "name": "pandian_mark",
+      "type": "String"
+    },
+    {
+      "name": "pandian_time",
+      "type": "Long"
+    }
+  ]
+}

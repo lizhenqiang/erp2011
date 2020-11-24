@@ -1,0 +1,36 @@
+{
+  "fields": [
+    {
+      "name": "pm_order_id",
+      "type": "String"
+    },
+    {
+      "name": "material_order_id",
+      "type": "String"
+    },
+    {
+      "name": "material_row",
+      "type": "String"
+    },
+    {
+      "name": "material_id",
+      "type": "String"
+    },
+    {
+      "name": "material_description",
+      "type": "String"
+    },
+    {
+      "name": "due_date",
+      "type": "Long"
+    },
+    {
+      "name": "material_count",
+      "type": "Integer"
+    },
+    {
+      "name": "guid",
+      "type": "String"
+    }
+  ]
+}

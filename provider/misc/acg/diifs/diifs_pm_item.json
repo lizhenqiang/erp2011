@@ -1,0 +1,59 @@
+{
+  "fields": [
+    {
+      "name": "WoNo",
+      "type": "String"
+    },
+	{
+      "name": "PmNo",
+      "type": "String"
+    },
+    {
+      "name": "TestPointId",
+      "type": "String"
+    },{
+      "name": "ParameterCode",
+      "type": "String"
+    },{
+      "name": "ParameterDesc",
+      "type": "String"
+    },{
+      "name": "ParameterType",
+      "type": "String"
+    },{
+      "name": "Unit",
+      "type": "String"
+    },{
+      "name": "MinValue",
+      "type": "String"
+    },
+	{
+      "name": "MaxValue",
+      "type": "String"
+    },
+	{
+      "name": "StartValue",
+      "type": "String"
+    },
+	{
+      "name": "Interval",
+      "type": "String"
+    },
+	{
+      "name": "LastValue",
+      "type": "String"
+    },
+	{
+      "name": "PmgenValue",
+      "type": "String"
+    },
+	{
+      "name": "ObjId",
+      "type": "String"
+    },
+	{
+      "name": "ObjVersion",
+      "type": "String"
+    }
+  ]
+}

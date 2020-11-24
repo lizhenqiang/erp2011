@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+      "name": "code",
+      "type": "String"
+    },
+    {
+      "name": "value",
+      "type": "String"
+    },
+    {
+      "name": "type",
+      "type": "String"
+    },
+    {
+      "name": "parent_code",
+      "type": "String"
+    },
+    {
+      "name": "parent_type",
+      "type": "String"
+    }
+  ]
+}

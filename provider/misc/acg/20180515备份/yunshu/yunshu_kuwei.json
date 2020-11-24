@@ -1,0 +1,20 @@
+{
+  "fields": [
+  {
+      "name": "transport_task_id",
+      "type": "String"
+    },
+    {
+      "name": "warehouse_no",
+      "type": "String"
+    },
+    {
+      "name": "warehouse_name",
+      "type": "String"
+    },
+    {
+      "name": "warehouse_type",
+      "type": "String"
+    }
+  ]
+}

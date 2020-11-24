@@ -1,0 +1,56 @@
+{
+  "fields": [
+  {
+      "name": "transport_task_id",
+      "type": "String"
+    },
+    {
+      "name": "line_no",
+      "type": "String"
+    },
+    {
+      "name": "part_no",
+      "type": "String"
+    },
+    {
+      "name": "part_name",
+      "type": "String"
+    },
+    {
+      "name": "quantity",
+      "type": "String"
+    },
+    {
+      "name": "unit",
+      "type": "String"
+    },
+    {
+      "name": "lot_batch_no",
+      "type": "String"
+    },
+	  {
+      "name": "serial_no",
+      "type": "String"
+    },
+    {
+      "name": "format",
+      "type": "String"
+    },
+    {
+      "name": "line_type",
+      "type": "String"
+    },
+    {
+      "name": "line_mark",
+      "type": "Long"
+    },
+    {
+      "name": "keep_col1",
+      "type": "String"
+    },
+    {
+      "name": "keep_col2",
+      "type": "String"
+    }
+  ]
+}

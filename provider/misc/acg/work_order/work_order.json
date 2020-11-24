@@ -1,0 +1,136 @@
+{
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "String"
+    },
+    {
+      "name": "guid",
+      "type": "String"
+    },
+    {
+      "name": "no",
+      "type": "String"
+    },
+    {
+      "name": "device_code",
+      "type": "String"
+    },
+    {
+      "name": "device_name",
+      "type": "String"
+    },
+    {
+      "name": "fault_description_text",
+      "type": "String"
+    },
+    {
+      "name": "fault_description_code",
+      "type": "String"
+    },
+    {
+      "name": "fault_type_text",
+      "type": "String"
+    },
+    {
+      "name": "fault_type_code",
+      "type": "String"
+    },
+    {
+      "name": "reporter_type_text",
+      "type": "String"
+    },
+    {
+      "name": "reporter_type_code",
+      "type": "String"
+    },
+    {
+      "name": "reporter",
+      "type": "String"
+    },
+    {
+      "name": "fault_note",
+      "type": "String"
+    },
+    {
+      "name": "fault_cause_text",
+      "type": "String"
+    },
+    {
+      "name": "fault_cause_code",
+      "type": "String"
+    },
+    {
+      "name": "fault_start_time",
+      "type": "Long"
+    },
+    {
+      "name": "operation_text",
+      "type": "String"
+    },
+    {
+      "name": "operation_code",
+      "type": "String"
+    },
+    {
+      "name": "operation_result_text",
+      "type": "String"
+    },
+    {
+      "name": "operation_result_code",
+      "type": "String"
+    },
+    {
+      "name": "operation_note",
+      "type": "String"
+    },
+    {
+      "name": "operator_text",
+      "type": "String"
+    },
+    {
+      "name": "operator_code",
+      "type": "String"
+    },
+    {
+      "name": "operation_start_time",
+      "type": "Long"
+    },
+    {
+      "name": "operation_end_time",
+      "type": "Long"
+    },
+    {
+      "name": "form_flag_text",
+      "type": "String"
+    },
+    {
+      "name": "form_flag_code",
+      "type": "String"
+    },
+    {
+      "name": "sync_status",
+      "type": "enum",
+      "enumName": "SyncStatus",
+      "enumValues": [
+        "LOCAL",
+        "SYNCHRONIZED",
+        "SYNCHRONIZING"
+      ],
+      "defaultValue": 0
+    },
+    {
+      "name": "last_modified",
+      "type": "Long"
+    },
+    {
+      "name": "delete_pending",
+      "type": "Boolean",
+      "defaultValue": 0
+    },
+    {
+      "name": "upload_pending",
+      "type": "Boolean"
+    }
+  ]
+}

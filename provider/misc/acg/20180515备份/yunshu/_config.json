@@ -1,0 +1,13 @@
+{
+  "syntaxVersion": "3",
+  "projectPackageId": "cc.xingyan.android.afc",
+  "authority": "com.biizy.android.erg.provider.yunshu",
+  "providerJavaPackage": "cc.xingyan.android.afc.provider",
+  "providerClassName": "YunshuProvider",
+  "sqliteOpenHelperClassName": "YunshuSQLiteOpenHelper",
+  "sqliteOpenHelperCallbacksClassName": "YunshuSQLiteOpenHelperCallbacks",
+  "databaseFileName": "yunshu.db",
+  "databaseVersion": 1,
+  "enableForeignKeys": true,
+  "useAnnotations": false
+}

@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "name": "code",
+      "type": "String"
+    },
+    {
+      "name": "name",
+      "type": "String"
+    },
+    {
+      "name": "type",
+      "type": "String"
+    },
+    {
+      "name": "location",
+      "type": "String"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "fields": [
+    {
+      "name": "work_area_id",
+      "type": "String",
+      "comment": "工区ID"
+    },
+    {
+      "name": "work_area_description",
+      "type": "String",
+      "comment": "工区描述"
+    },
+    {
+      "name": "guid",
+      "type": "String"
+    },
+    {
+      "name": "work_id",
+      "type": "String",
+      "comment": "日巡检任务ID"
+    },
+    {
+      "name": "date",
+      "type": "Long",
+      "comment": "日巡检日期"
+    },
+    {
+      "name": "start_time",
+      "type": "Long"
+    },
+    {
+      "name": "end_time",
+      "type": "Long"
+    },
+    {
+      "name": "complete_time",
+      "type": "Long"
+    },
+    {
+      "name": "last_modified",
+      "type": "Long"
+    },
+    {
+      "name": "status",
+      "type": "enum",
+      "enumName": "DiWorkStatus",
+      "enumValues": [
+        "NEW",
+        "DONE",
+        "UPLOADED"
+      ],
+      "defaultValue": 0
+    },
+    {
+      "name": "upload_pending",
+      "type": "Boolean"
+    },
+    {
+      "name": "operator",
+      "type": "String"
+    }
+  ]
+}

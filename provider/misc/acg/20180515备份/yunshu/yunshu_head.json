@@ -1,0 +1,52 @@
+{
+  "fields": [
+  {
+      "name": "transport_task_id",
+      "type": "String"
+    },
+    {
+      "name": "transport_task_state",
+      "type": "String"
+    },
+    {
+      "name": "create_date",
+      "type": "Long"
+    },
+    {
+      "name": "maintenance_type_id",
+      "type": "String"
+    },
+    {
+      "name": "plan_by",
+      "type": "String"
+    },
+    {
+      "name": "pack_number",
+      "type": "String"
+    },
+    {
+      "name": "send_warehouse_no",
+      "type": "String"
+    },
+	  {
+      "name": "receive_warehouse_no",
+      "type": "String"
+    },
+    {
+      "name": "transport_task_type",
+      "type": "String"
+    },
+    {
+      "name": "keep_col1",
+      "type": "String"
+    },
+    {
+      "name": "keep_col2",
+      "type": "String"
+    },
+    {
+      "name": "keep_col3",
+      "type": "String"
+    }
+  ]
+}

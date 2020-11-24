@@ -1,0 +1,13 @@
+{
+  "syntaxVersion": "3",
+  "projectPackageId": "cc.xingyan.android.afc",
+  "authority": "com.biizy.android.erg.provider.report",
+  "providerJavaPackage": "cc.xingyan.android.afc.provider",
+  "providerClassName": "ReportProvider",
+  "sqliteOpenHelperClassName": "ReportSQLiteOpenHelper",
+  "sqliteOpenHelperCallbacksClassName": "ReportSQLiteOpenHelperCallbacks",
+  "databaseFileName": "report.db",
+  "databaseVersion": 1,
+  "enableForeignKeys": true,
+  "useAnnotations": false
+}

@@ -1,0 +1,13 @@
+{
+  "syntaxVersion": "3",
+  "projectPackageId": "cc.xingyan.android.afc",
+  "authority": "com.biizy.android.erg.provider.work_order",
+  "providerJavaPackage": "cc.xingyan.android.afc.provider",
+  "providerClassName": "WorkOrderProvider",
+  "sqliteOpenHelperClassName": "WorkOrderSQLiteOpenHelper",
+  "sqliteOpenHelperCallbacksClassName": "WorkOrderSQLiteOpenHelperCallbacks",
+  "databaseFileName": "work_order.db",
+  "databaseVersion": 2,
+  "enableForeignKeys": true,
+  "useAnnotations": false
+}

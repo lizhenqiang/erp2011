@@ -1,0 +1,32 @@
+{
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "String"
+    },
+
+
+    {
+      "name": "content",
+      "type": "String"
+    },
+    {
+      "name": "form_no",
+      "type": "String"
+    },
+    {
+      "name": "hand_method",
+      "type": "String"
+    },
+
+    {
+      "name": "meter_con",
+      "type": "String"
+    },
+    {
+      "name": "excute_time",
+      "type": "Long"
+    }
+
+  ]
+}

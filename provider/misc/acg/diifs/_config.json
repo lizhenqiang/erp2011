@@ -1,0 +1,13 @@
+{
+  "syntaxVersion": "3",
+  "projectPackageId": "cc.xingyan.android.afc",
+  "authority": "com.biizy.android.erg.provider.diifs",
+  "providerJavaPackage": "cc.xingyan.android.afc.provider",
+  "providerClassName": "DiifsProvider",
+  "sqliteOpenHelperClassName": "DiifsSQLiteOpenHelper",
+  "sqliteOpenHelperCallbacksClassName": "DiifsSQLiteOpenHelperCallbacks",
+  "databaseFileName": "diifs.db",
+  "databaseVersion": 2,
+  "enableForeignKeys": true,
+  "useAnnotations": false
+}

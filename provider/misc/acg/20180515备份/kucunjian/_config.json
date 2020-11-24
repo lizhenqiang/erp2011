@@ -1,0 +1,13 @@
+{
+  "syntaxVersion": "3",
+  "projectPackageId": "cc.xingyan.android.afc",
+  "authority": "com.biizy.android.erg.provider.kucunjian",
+  "providerJavaPackage": "cc.xingyan.android.afc.provider",
+  "providerClassName": "KucunjianProvider",
+  "sqliteOpenHelperClassName": "KucunjianSQLiteOpenHelper",
+  "sqliteOpenHelperCallbacksClassName": "KucunjianSQLiteOpenHelperCallbacks",
+  "databaseFileName": "kucunjian.db",
+  "databaseVersion": 1,
+  "enableForeignKeys": true,
+  "useAnnotations": false
+}

@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+      "name": "org_code",
+      "type": "String"
+    },
+    {
+      "name": "user_id",
+      "type": "String"
+    },
+    {
+      "name": "user_no",
+      "type": "String"
+    },
+    {
+      "name": "user_name",
+      "type": "String"
+    },
+    {
+      "name": "password_md5",
+      "type": "String"
+    }
+  ]
+}

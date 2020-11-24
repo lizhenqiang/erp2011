@@ -1,0 +1,28 @@
+{
+  "fields": [
+  {
+      "name": "WoNo",
+      "type": "String"
+    },
+    {
+      "name": "PmNo",
+      "type": "String"
+    },
+	 {
+      "name": "LogicName",
+      "type": "String"
+    },
+    {
+      "name": "PhysicName",
+      "type": "String"
+    },
+    {
+      "name": "PhysicCode",
+      "type": "String"
+    },
+    {
+       "name": "isDone",
+      "type": "Boolean"
+    }
+  ]
+}
