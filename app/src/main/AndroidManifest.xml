@@ -2,20 +2,265 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cc.xingyan.android.afc">
 
+    <uses-permission android:name="android.permission.CAMERA" />		<!-- Dangerous Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 		<!-- Dangerozus Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 	<!-- Dangerous Permissions -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />     <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />          <!--用于访问wifi网络信息，wifi信息会用于进行网络定位--><!-- Dangerous Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />        <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:name=".AfcApplication"
+        android:icon="@mipmap/m4s"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
+        android:largeHeap="true"
         android:theme="@style/Theme.Afc">
-        <activity android:name=".MainActivity">
+
+        <!-- pgyer.com -->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="b0ced7264ffe1f40f3028f04b601acad" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="3g0negfgnXUIywC1QNh0PwiF" />
+
+        <receiver android:name=".receiver.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.WorkNoConfirmAlarmReceiver" >
+        </receiver>
+
+        <service android:name=".service.SyncService" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+        </service>
+        <service android:name="cc.xingyan.android.afc.util.TService" >
+        </service>
+
+        <service
+            android:name=".service.WorkRemindService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="remind" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="cc.xingyan.android.afc.provider.WorkOrderProvider"
+            android:authorities="com.biizy.android.erg.provider.work_order"
+            android:exported="true" />
+
+        <provider
+            android:name="cc.xingyan.android.afc.provider.CmProvider"
+            android:authorities="com.biizy.android.erg.provider.cm"
+            android:exported="true" />
+
+        <provider
+            android:name="cc.xingyan.android.afc.provider.DiProvider"
+            android:authorities="com.biizy.android.erg.provider.di"
+            android:exported="true" />
+
+        <provider
+            android:name="cc.xingyan.android.afc.provider.PmifsProvider"
+            android:authorities="com.biizy.android.erg.provider.pmifs"
+            android:exported="true" />
+
+        <provider
+            android:name="cc.xingyan.android.afc.provider.ReportProvider"
+            android:authorities="com.biizy.android.erg.provider.report"
+            android:exported="true" />
+
+        <provider
+            android:name="cc.xingyan.android.afc.provider.pictureProvider"
+            android:authorities="com.biizy.android.erg.provider.picture"
+            android:exported="true" />
+
+        <provider
+            android:name="cc.xingyan.android.afc.provider.KucunjianProvider"
+            android:authorities="com.biizy.android.erg.provider.kucunjian"
+            android:exported="true" />
+        <provider
+            android:name="cc.xingyan.android.afc.provider.DiifsProvider"
+            android:authorities="com.biizy.android.erg.provider.diifs"
+            android:exported="true" />
+        <provider
+            android:name="cc.xingyan.android.afc.provider.YunshuProvider"
+            android:authorities="com.biizy.android.erg.provider.yunshu"
+            android:exported="true" />
+
+<!--        <activity android:name=".widget.SplashActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="@string/logo_title"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:windowSoftInputMode="adjustResize">-->
+<!--        </activity>-->
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:label="@string/logo_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+<!--        <activity-->
+<!--            android:name=".LoginSettingsActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="@string/title_activity_login_settings"-->
+<!--            android:screenOrientation="portrait" />-->
+
+        <activity
+            android:name=".SyncActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:label="@string/title_activity_sync"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert" />
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:theme="@style/Theme.Afc.Main" />
+
+        <activity
+            android:name=".Main4ChartActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:theme="@style/Theme.Afc.Main" />
+
+        <activity
+            android:name=".Main4ChartForWebActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:theme="@style/Theme.Afc.Main" />
+
+<!--        <activity-->
+<!--            android:name=".Main4PartActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:theme="@style/Theme.Afc.Main"/>-->
+
+<!--        <activity-->
+<!--            android:name=".Main4PankuReportManagementActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:theme="@style/Theme.Afc.Main"/>-->
+
+<!--        <activity-->
+<!--            android:name=".Main4YunshuActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:theme="@style/Theme.Afc.Main"/>-->
+
+<!--        <activity-->
+<!--            android:name=".Main4YunshuUploadedDetailActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:theme="@style/Theme.Afc.Main"/>-->
+
+<!--        <activity-->
+<!--            android:name=".WorkOrderActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="@string/title_activity_work_order"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:windowSoftInputMode="stateHidden" />-->
+
+<!--        <activity-->
+<!--            android:name=".CmWorkActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="@string/title_activity_cm_work"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:windowSoftInputMode="stateHidden" />-->
+
+<!--        <activity-->
+<!--            android:name=".photoutil.ShowRecordFileActivity"-->
+<!--            android:theme="@style/Theme.AppCompat.Dialog"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:windowSoftInputMode="stateHidden">-->
+<!--        </activity>-->
+
+<!--        <activity android:name=".photoutil.album.ImageFileActivity"></activity>-->
+
+<!--        <activity-->
+<!--            android:name=".PmWorkActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="@string/title_activity_pm_job"-->
+<!--            android:screenOrientation="portrait" />-->
+
+<!--        <activity-->
+<!--            android:name=".PmWorkQueryActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="PM工单查询"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:theme="@style/DialogTheme"/>-->
+
+<!--        <activity-->
+<!--            android:name=".DayInspectEditorActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="@string/title_activity_day_inspect_edit"-->
+<!--            android:screenOrientation="portrait" />-->
+
+<!--        <activity-->
+<!--            android:name=".DayInspectWorkActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="@string/title_fragment_di"-->
+<!--            android:screenOrientation="portrait" />-->
+
+<!--        <activity-->
+<!--            android:name=".DayInspectWorkPmItemActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="@string/title_fragment_di"-->
+<!--            android:screenOrientation="portrait" />-->
+
+<!--        <activity-->
+<!--            android:name=".SyncSettingsActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="@string/title_activity_sync_settings"-->
+<!--            android:launchMode="singleTop"-->
+<!--            android:screenOrientation="portrait" />-->
+
+<!--        <activity-->
+<!--            android:name=".SettingsActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="@string/title_activity_settings"-->
+<!--            android:launchMode="singleTop"-->
+<!--            android:screenOrientation="portrait" />-->
+
+<!--        <activity-->
+<!--            android:name=".ChangePasswordActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="@string/set_pwd"-->
+<!--            android:launchMode="singleTop"-->
+<!--            android:screenOrientation="portrait" />-->
+<!--        <activity-->
+<!--            android:name=".ChangeWorkRemindActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="修改提醒间隔"-->
+<!--            android:launchMode="singleTop"-->
+<!--            android:screenOrientation="portrait" />-->
+
+<!--        <activity-->
+<!--            android:name=".ScanActivity"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="@string/activity_scan"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:theme="@android:style/Theme.Dialog"/>-->
+
+<!--        <activity-->
+<!--            android:name=".ScanActivityForCamera"-->
+<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
+<!--            android:label="@string/activity_scan"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:theme="@style/Theme.Afc.Main" />-->
     </application>
 
 </manifest>

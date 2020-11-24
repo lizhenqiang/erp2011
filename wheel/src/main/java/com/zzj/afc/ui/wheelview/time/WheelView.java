@@ -39,6 +39,8 @@ import android.view.View;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
 
+import androidx.core.content.ContextCompat;
+
 import com.zzj.afc.R;
 
 import java.util.LinkedList;
@@ -425,7 +427,7 @@ public class WheelView extends View {
             itemsPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
             // itemsPaint.density = getResources().getDisplayMetrics().density;
             itemsPaint.setTextSize(TEXT_SIZE);
-            itemsPaint.setColor(getResources().getColor(R.color.text_wheel_item));
+            itemsPaint.setColor(ContextCompat.getColor(getContext(),R.color.text_wheel_item));
         }
 
         if (valuePaint == null) {
@@ -433,11 +435,11 @@ public class WheelView extends View {
             // valuePaint.density = getResources().getDisplayMetrics().density;
             valuePaint.setTextSize(TEXT_SIZE);
             valuePaint.setShadowLayer(0.1f, 0, 0.1f, 0xFFC0C0C0);
-            valuePaint.setColor(getResources().getColor(R.color.text_wheel_value));
+            valuePaint.setColor(ContextCompat.getColor(getContext(),R.color.text_wheel_value));
         }
 
         if (centerDrawable == null) {
-            centerDrawable = getContext().getResources().getDrawable(
+            centerDrawable = ContextCompat.getDrawable(getContext(),
                     R.drawable.wheel_val);
         }
 

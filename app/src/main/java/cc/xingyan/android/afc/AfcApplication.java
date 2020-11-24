@@ -11,9 +11,11 @@ package cc.xingyan.android.afc;
 
 import android.content.Context;
 import android.os.Build;
-import android.preference.PreferenceManager;
-import android.support.multidex.MultiDex;
-import android.support.multidex.MultiDexApplication;
+import androidx.preference.PreferenceManager;
+
+
+import androidx.multidex.MultiDex;
+import androidx.multidex.MultiDexApplication;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.squareup.moshi.Moshi;
@@ -26,6 +28,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
+
 
 import cc.xingyan.android.afc.api.model.adapter.DateAdapter;
 import cc.xingyan.android.afc.inject.Dagger;
@@ -40,11 +43,11 @@ import retrofit.RxJavaCallAdapterFactory;
  */
 public class AfcApplication extends MultiDexApplication {
 
-        public static final String DEFAULT_BASE_URL = "http://pda.mtd-bj.com:8832/Service1.svc/json/";    //常用测试库
+//        public static final String DEFAULT_BASE_URL = "http://pda.mtd-bj.com:8832/Service1.svc/json/";    //常用测试库
 //    public static final String DEFAULT_BASE_URL = "http://192.168.4.194:2201/Service1.svc/json/";
 //    public static final String DEFAULT_BASE_URL = "http://pda.mtd-bj.com:8833/Service1.svc/json/";    //正式库——慎用
 
-//    public static final String DEFAULT_BASE_URL = "http://192.168.3.110:2201/Service1.svc/json/";       //本机
+    public static final String DEFAULT_BASE_URL = "http://192.168.3.110:2201/Service1.svc/json/";       //本机
 
 
 //    public static final String DEFAULT_BASE_URL = "http://pda.mtd-bj.com" + BuildConfig.SERVER_PORT + "/Service1.svc/json/";   //发布时使用
@@ -77,6 +80,7 @@ public class AfcApplication extends MultiDexApplication {
         Dagger.initialize(this);
     }
 
+    @SuppressWarnings("deprecation")
     public Retrofit createRetrofit() throws  Exception{
 
         final String baseUrl = PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getString("api.base_url", DEFAULT_BASE_URL);
