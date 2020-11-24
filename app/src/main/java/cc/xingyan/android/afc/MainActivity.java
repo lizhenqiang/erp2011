@@ -175,10 +175,10 @@ public class MainActivity extends TitleActivity implements NavigationView.OnNavi
         menuItem.setChecked(true);
         mDrawerLayout.closeDrawers();
 
-//        final int itemId = menuItem.getItemId();
-//        final FragmentManager fm = getSupportFragmentManager();
-//        final Fragment fragment = fm.findFragmentById(R.id.fragment_container);
-//
+        final int itemId = menuItem.getItemId();
+        final FragmentManager fm = getSupportFragmentManager();
+        final Fragment fragment = fm.findFragmentById(R.id.fragment_container);
+
 //        if (itemId == R.id.nav_home) {
 //            mCheckedNavItemId = itemId;
 //            if (!(fragment instanceof HomeFragment)) {
@@ -204,20 +204,24 @@ public class MainActivity extends TitleActivity implements NavigationView.OnNavi
 //            if (!(fragment instanceof DayInspectFragment)) {
 //                fm.beginTransaction().replace(R.id.fragment_container, new DayInspectWorkFragment()).commitAllowingStateLoss();
 //            }
-//        } else if (itemId == R.id.nav_sync) {
-//            startActivity(new Intent(this, SyncSettingsActivity.class));
-//        } else if (itemId == R.id.nav_settings) {
-//            startActivity(new Intent(this, SettingsActivity.class));
-//        } else if (itemId == R.id.nav_logout) {
-//            if (queryNoUploadTask()) {
-//                startActivity(new Intent(this, LoginActivity.class));
-//                this.finish();
-//            }
-//        }else if (itemId == R.id.nav_chart) {
-//            startActivity(new Intent(this, Main4ChartForWebActivity.class));
-//        }else if(itemId == R.id.nav_part){
-//            startActivity(new Intent(this,  Main4PartActivity.class));
 //        }
+//
+//        else
+
+            if (itemId == R.id.nav_sync) {
+            startActivity(new Intent(this, SyncSettingsActivity.class));
+        } else if (itemId == R.id.nav_settings) {
+            startActivity(new Intent(this, SettingsActivity.class));
+        } else if (itemId == R.id.nav_logout) {
+            if (queryNoUploadTask()) {
+                startActivity(new Intent(this, LoginActivity.class));
+                this.finish();
+            }
+        }else if (itemId == R.id.nav_chart) {
+            startActivity(new Intent(this, Main4ChartForWebActivity.class));
+        }else if(itemId == R.id.nav_part){
+            startActivity(new Intent(this,  Main4PartActivity.class));
+        }
         return true;
     }
 

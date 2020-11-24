@@ -5,11 +5,14 @@ import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
+
+import java.util.UUID;
 
 public class TService extends Service {
 
@@ -58,8 +61,10 @@ public class TService extends Service {
 	}
 
 	public void initLocation(){
-		TelephonyManager tm = (TelephonyManager)getApplicationContext().getSystemService(getApplicationContext().TELEPHONY_SERVICE);
-		imei = tm.getDeviceId();
+//		TelephonyManager tm = (TelephonyManager)getApplicationContext().getSystemService(getApplicationContext().TELEPHONY_SERVICE);
+//		imei = tm.getDeviceId();
+		imei = IMEIUtil.getIMEI(getApplicationContext());
+		Log.e("TAG","imei=="+imei);
 		if(imei == null){
 			imei = "no_imei";
 		}

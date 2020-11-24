@@ -72,10 +72,25 @@ import javax.inject.Singleton;
 //import cc.xingyan.android.afc.receiver.NetworkStatusReceiver;
 //import cc.xingyan.android.afc.service.SyncService;
 //import cc.xingyan.android.afc.service.WorkRemindService;
+import cc.xingyan.android.afc.ChangePasswordActivity;
+import cc.xingyan.android.afc.ChangeWorkRemindActivity;
 import cc.xingyan.android.afc.LoginActivity;
 import cc.xingyan.android.afc.Main4ChartForWebActivity;
+import cc.xingyan.android.afc.Main4YunshuActivity;
+import cc.xingyan.android.afc.Main4YunshuUploadedDetailActivity;
 import cc.xingyan.android.afc.MainActivity;
+import cc.xingyan.android.afc.PartKunCunFragment;
+import cc.xingyan.android.afc.PartLingJianFragment;
+import cc.xingyan.android.afc.PartPanKuFragment;
+import cc.xingyan.android.afc.PartYunShuHeadFragment;
+import cc.xingyan.android.afc.PartYunShuLineFragment;
+import cc.xingyan.android.afc.PartYunShuUploadedHeadFragment;
+import cc.xingyan.android.afc.PartYunShuUploadedLineFragment;
+import cc.xingyan.android.afc.PartYunshuNoUploadFragment;
+import cc.xingyan.android.afc.PartYunshuUploadedFragment;
+import cc.xingyan.android.afc.SettingsActivity;
 import cc.xingyan.android.afc.SyncActivity;
+import cc.xingyan.android.afc.receiver.NetworkStatusReceiver;
 import cc.xingyan.android.afc.service.SyncService;
 import cc.xingyan.android.afc.service.WorkRemindService;
 import cc.xingyan.android.afc.util.MyCrashHandler;
@@ -92,10 +107,10 @@ public interface ComponentInjector {
 //
     void inject(SyncActivity t);
 //
-//    void inject(SettingsActivity.SettingsFragment t);
+    void inject(SettingsActivity.SettingsFragment t);
 //
-//    void inject(ChangePasswordActivity.ChangePwdFragment t);
-//    void inject(ChangeWorkRemindActivity.ChangeWorkRemindFragment t);
+    void inject(ChangePasswordActivity.ChangePwdFragment t);
+    void inject(ChangeWorkRemindActivity.ChangeWorkRemindFragment t);
 //
 //    void inject(HomeFragment t);
 //
@@ -140,7 +155,7 @@ public interface ComponentInjector {
 //
     void inject(WorkRemindService t);
 //
-//    void inject(NetworkStatusReceiver t);
+    void inject(NetworkStatusReceiver t);
 //
 //    void inject(CmFragment t);
 //    void inject(CmWorkListFragment t);
@@ -156,18 +171,18 @@ public interface ComponentInjector {
 //    void inject(CmWorkReleasedFragment t);
 //    void inject(CmFaultReleasedorChangeFragment t);
 //
-//    void inject(PartLingJianFragment t);
-//    void inject(PartKunCunFragment t);
-//    void inject(PartPanKuFragment t);
-//    void inject(PartYunShuHeadFragment t);
-//    void inject(PartYunShuLineFragment t);
-//    void inject(PartYunShuUploadedHeadFragment t);
-//    void inject(PartYunShuUploadedLineFragment t);
-//    void inject(PartYunshuNoUploadFragment t);
-//    void inject(PartYunshuUploadedFragment t);
+    void inject(PartLingJianFragment t);
+    void inject(PartKunCunFragment t);
+    void inject(PartPanKuFragment t);
+    void inject(PartYunShuHeadFragment t);
+    void inject(PartYunShuLineFragment t);
+    void inject(PartYunShuUploadedHeadFragment t);
+    void inject(PartYunShuUploadedLineFragment t);
+    void inject(PartYunshuNoUploadFragment t);
+    void inject(PartYunshuUploadedFragment t);
 //    void inject(Main4PankuReportManagementActivity t);
-//    void inject(Main4YunshuActivity t);
-//    void inject(Main4YunshuUploadedDetailActivity t);
+    void inject(Main4YunshuActivity t);
+    void inject(Main4YunshuUploadedDetailActivity t);
 
 
     void inject(MyCrashHandler t);

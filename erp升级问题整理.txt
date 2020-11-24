@@ -19,3 +19,11 @@ A6:com.google.android.material.textfield.TextInputLayout 替换 android.support.
 
 Q7: com.google.android.material.navigation.NavigationView 的headerView空指针
 A7: 通过findviewById或者butterknife获取不到NavigationView中的headerView,可以通过NavigationView的getHeaderView(int index)获取
+
+
+Q8:java.lang.SecurityException: getDeviceId: The user 10115 does not meet the requirements to access device identifiers.
+A8:android10无法通过getDeviceId获取设备id,只能获取androidId,androidId在回复出厂设置时会发生变化。
+
+Q9:setUserVisbleHint过时问题
+A9:If you need this method because you try to detect which fragment is currently visible in ViewPager. You can now just use onResume and onPause methods instead but before that you should change default behaviour in FragmentPagerAdapter constructor.
+like this :FragmentPagerAdapter(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT)

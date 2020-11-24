@@ -13,11 +13,13 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />          <!--用于访问wifi网络信息，wifi信息会用于进行网络定位--><!-- Dangerous Permissions -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />        <!-- 用于访问GPS定位 -->
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+
     <application
         android:name=".AfcApplication"
         android:icon="@mipmap/m4s"
         android:label="@string/app_name"
         android:largeHeap="true"
+
         android:theme="@style/Theme.Afc">
 
         <!-- pgyer.com -->
@@ -146,25 +148,25 @@
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
             android:theme="@style/Theme.Afc.Main" />
 
-<!--        <activity-->
-<!--            android:name=".Main4PartActivity"-->
-<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
-<!--            android:theme="@style/Theme.Afc.Main"/>-->
+        <activity
+            android:name=".Main4PartActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:theme="@style/Theme.Afc.Main"/>
 
 <!--        <activity-->
 <!--            android:name=".Main4PankuReportManagementActivity"-->
 <!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
 <!--            android:theme="@style/Theme.Afc.Main"/>-->
 
-<!--        <activity-->
-<!--            android:name=".Main4YunshuActivity"-->
-<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
-<!--            android:theme="@style/Theme.Afc.Main"/>-->
+        <activity
+            android:name=".Main4YunshuActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:theme="@style/Theme.Afc.Main"/>
 
-<!--        <activity-->
-<!--            android:name=".Main4YunshuUploadedDetailActivity"-->
-<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
-<!--            android:theme="@style/Theme.Afc.Main"/>-->
+        <activity
+            android:name=".Main4YunshuUploadedDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:theme="@style/Theme.Afc.Main"/>
 
 <!--        <activity-->
 <!--            android:name=".WorkOrderActivity"-->
@@ -221,32 +223,32 @@
 <!--            android:label="@string/title_fragment_di"-->
 <!--            android:screenOrientation="portrait" />-->
 
-<!--        <activity-->
-<!--            android:name=".SyncSettingsActivity"-->
-<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
-<!--            android:label="@string/title_activity_sync_settings"-->
-<!--            android:launchMode="singleTop"-->
-<!--            android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".SyncSettingsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:label="@string/title_activity_sync_settings"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
 
-<!--        <activity-->
-<!--            android:name=".SettingsActivity"-->
-<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
-<!--            android:label="@string/title_activity_settings"-->
-<!--            android:launchMode="singleTop"-->
-<!--            android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".SettingsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:label="@string/title_activity_settings"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
 
-<!--        <activity-->
-<!--            android:name=".ChangePasswordActivity"-->
-<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
-<!--            android:label="@string/set_pwd"-->
-<!--            android:launchMode="singleTop"-->
-<!--            android:screenOrientation="portrait" />-->
-<!--        <activity-->
-<!--            android:name=".ChangeWorkRemindActivity"-->
-<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
-<!--            android:label="修改提醒间隔"-->
-<!--            android:launchMode="singleTop"-->
-<!--            android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:label="@string/set_pwd"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangeWorkRemindActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:label="修改提醒间隔"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
 
 <!--        <activity-->
 <!--            android:name=".ScanActivity"-->

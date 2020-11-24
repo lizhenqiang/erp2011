@@ -28,6 +28,7 @@ import android.provider.Settings;
 
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
@@ -44,6 +45,7 @@ import com.squareup.moshi.JsonDataException;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.UUID;
 
 import javax.inject.Inject;
 
@@ -66,6 +68,7 @@ import cc.xingyan.android.afc.provider.picture.PictureSelection;
 import cc.xingyan.android.afc.provider.user.UserCursor;
 import cc.xingyan.android.afc.provider.user.UserSelection;
 import cc.xingyan.android.afc.service.SyncService;
+import cc.xingyan.android.afc.util.IMEIUtil;
 import cc.xingyan.android.afc.util.LogUtil;
 import cc.xingyan.android.afc.util.NetUtil;
 import cc.xingyan.android.afc.util.PermissionsChecker;
@@ -322,11 +325,11 @@ public class LoginActivity extends BaseActivity {
                     versionType = "DEV";
                 }
 
-                TelephonyManager tm = (TelephonyManager)getApplicationContext().
-                        getSystemService(getApplicationContext().TELEPHONY_SERVICE);
-                String imei = tm.getDeviceId();
-
-
+//                TelephonyManager tm = (TelephonyManager)getApplicationContext().
+//                        getSystemService(getApplicationContext().TELEPHONY_SERVICE);
+//                String imei = tm.getDeviceId();
+                String    imei = IMEIUtil.getIMEI(getApplicationContext());
+                Log.e("TAG","imei=="+imei);
                 NewVersion newVersion = new NewVersion();
                 newVersion.setCurrectVersion(Integer.toString(versionCode));
                 newVersion.setCurrentVersionType(versionType);

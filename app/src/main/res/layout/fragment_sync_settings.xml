@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:text="选择要同步的内容" />
 
-        <android.support.v7.widget.GridLayout
+        <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -119,7 +119,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true" />
-        </android.support.v7.widget.GridLayout>
+        </androidx.gridlayout.widget.GridLayout>
 
         <TextView
             android:id="@+id/action_sync"

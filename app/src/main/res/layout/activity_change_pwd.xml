@@ -15,7 +15,7 @@
         android:paddingLeft="@dimen/page_horizontal_spacing"
         android:paddingRight="@dimen/page_horizontal_spacing">
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_password_old"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -32,9 +32,9 @@
                 android:paddingRight="10dp"
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_password_new"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -52,9 +52,9 @@
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_password_new2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -70,7 +70,7 @@
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/action_change_pwd_commit"
