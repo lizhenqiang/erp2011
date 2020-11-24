@@ -166,14 +166,20 @@ public class PartYunshuUploadedFragment extends BaseFragment {
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
         if(isVisibleToUser){
-            if(isFirstShow){
-                isUploadedFragmentShow = true;
-                getTransportHeadInfo();
-                isFirstShow = false;
-            }
+
         }
     }
 
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if(isFirstShow){
+            isUploadedFragmentShow = true;
+            getTransportHeadInfo();
+            isFirstShow = false;
+        }
+    }
 
     @Override
     public void onDestroyView() {

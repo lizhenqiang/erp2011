@@ -179,12 +179,13 @@ public class MainActivity extends TitleActivity implements NavigationView.OnNavi
         final FragmentManager fm = getSupportFragmentManager();
         final Fragment fragment = fm.findFragmentById(R.id.fragment_container);
 
-//        if (itemId == R.id.nav_home) {
-//            mCheckedNavItemId = itemId;
-//            if (!(fragment instanceof HomeFragment)) {
-//                fm.beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commitAllowingStateLoss();
-//            }
-//        } else if (itemId == R.id.nav_workorder) {
+        if (itemId == R.id.nav_home) {
+            mCheckedNavItemId = itemId;
+            if (!(fragment instanceof HomeFragment)) {
+                fm.beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commitAllowingStateLoss();
+            }
+        }
+//        else if (itemId == R.id.nav_workorder) {
 //            mCheckedNavItemId = itemId;
 //            if (!(fragment instanceof WorkOrderFragment)) {
 //                fm.beginTransaction().replace(R.id.fragment_container, new WorkOrderFragment()).commitAllowingStateLoss();
@@ -206,9 +207,7 @@ public class MainActivity extends TitleActivity implements NavigationView.OnNavi
 //            }
 //        }
 //
-//        else
-
-            if (itemId == R.id.nav_sync) {
+        else if (itemId == R.id.nav_sync) {
             startActivity(new Intent(this, SyncSettingsActivity.class));
         } else if (itemId == R.id.nav_settings) {
             startActivity(new Intent(this, SettingsActivity.class));
@@ -250,50 +249,50 @@ public class MainActivity extends TitleActivity implements NavigationView.OnNavi
             Fragment fragment = fm.findFragmentById(R.id.fragment_container);
 
 
-//            if (fragment instanceof HomeFragment) {
-//                if(queryNoUploadTask() == false){
-//                    new AlertDialog.Builder(this)
-//                            .setIcon(R.drawable.ic_info_black_24dp)
-//                            .setTitle(R.string.login_out)
-//                            .setMessage("你有已完成的工单还没上传,是否现在上传?")
-//                            .setPositiveButton(R.string.Immediately_exit, new DialogInterface.OnClickListener() {
-//                                @Override
-//                                public void onClick(DialogInterface dialog, int which) {
-//                                    clearShowMSGSharedPreference();
-//
-//                                    Intent intentStopLoc = new Intent(MainActivity.this, TService.class);
-//                                    stopService(intentStopLoc);
-//
-//                                    finish();
-//                                }
-//                            })
-//                            .setNegativeButton(R.string.return_nav_home, new DialogInterface.OnClickListener() {
-//                                @Override
-//                                public void onClick(DialogInterface dialog, int which) {
-//                                    final Intent intent = new Intent(getApplicationContext(), SyncActivity.class);
-//                                    intent.putExtra(SyncActivity.EXTRA_SYNC_OPTIONS, SyncService.SYNC_UPLOAD_ALL);
-//                                    intent.putExtra(SyncActivity.EXTRA_RESET_AUTO_SYNC, false);
-//                                    intent.putExtra("source_page","MainActivity");
-//                                    startActivity(intent);
-//                                    clearShowMSGSharedPreference();
-//                                }
-//                            })
-//                            .show();
-//                }else {
-//                    if((System.currentTimeMillis() - exitTime) > 2000){
-//                        Toast.makeText(getApplicationContext(), R.string.message_press_back_again_to_exit, Toast.LENGTH_SHORT).show();
-//                        exitTime = System.currentTimeMillis();
-//                    } else {
-//                        mFinishPending = true;
-//                        finish();
-//                        System.exit(0);
-//                    }
-//                }
-//
-//            } else {
-//                fm.beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commitAllowingStateLoss();
-//                mFinishPending = false;
-//            }
+            if (fragment instanceof HomeFragment) {
+                if(queryNoUploadTask() == false){
+                    new AlertDialog.Builder(this)
+                            .setIcon(R.drawable.ic_info_black_24dp)
+                            .setTitle(R.string.login_out)
+                            .setMessage("你有已完成的工单还没上传,是否现在上传?")
+                            .setPositiveButton(R.string.Immediately_exit, new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    clearShowMSGSharedPreference();
+
+                                    Intent intentStopLoc = new Intent(MainActivity.this, TService.class);
+                                    stopService(intentStopLoc);
+
+                                    finish();
+                                }
+                            })
+                            .setNegativeButton(R.string.return_nav_home, new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    final Intent intent = new Intent(getApplicationContext(), SyncActivity.class);
+                                    intent.putExtra(SyncActivity.EXTRA_SYNC_OPTIONS, SyncService.SYNC_UPLOAD_ALL);
+                                    intent.putExtra(SyncActivity.EXTRA_RESET_AUTO_SYNC, false);
+                                    intent.putExtra("source_page","MainActivity");
+                                    startActivity(intent);
+                                    clearShowMSGSharedPreference();
+                                }
+                            })
+                            .show();
+                }else {
+                    if((System.currentTimeMillis() - exitTime) > 2000){
+                        Toast.makeText(getApplicationContext(), R.string.message_press_back_again_to_exit, Toast.LENGTH_SHORT).show();
+                        exitTime = System.currentTimeMillis();
+                    } else {
+                        mFinishPending = true;
+                        finish();
+                        System.exit(0);
+                    }
+                }
+
+            } else {
+                fm.beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commitAllowingStateLoss();
+                mFinishPending = false;
+            }
 
         }
     }

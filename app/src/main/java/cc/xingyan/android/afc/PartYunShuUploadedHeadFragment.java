@@ -90,11 +90,16 @@ public class PartYunShuUploadedHeadFragment extends BaseFragment {
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
         if (isVisibleToUser) {
-            PartYunShuUploadedLineFragment.isYunShuLineUploadedFragmentVisible = false;
+
 
         }
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        PartYunShuUploadedLineFragment.isYunShuLineUploadedFragmentVisible = false;
+    }
 
     private void bindAndShowData(){
         maintenanceTypes = getResources().getStringArray(R.array.maintenance_type);

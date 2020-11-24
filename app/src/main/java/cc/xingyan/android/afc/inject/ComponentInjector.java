@@ -74,8 +74,10 @@ import javax.inject.Singleton;
 //import cc.xingyan.android.afc.service.WorkRemindService;
 import cc.xingyan.android.afc.ChangePasswordActivity;
 import cc.xingyan.android.afc.ChangeWorkRemindActivity;
+import cc.xingyan.android.afc.HomeFragment;
 import cc.xingyan.android.afc.LoginActivity;
 import cc.xingyan.android.afc.Main4ChartForWebActivity;
+import cc.xingyan.android.afc.Main4PankuReportManagementActivity;
 import cc.xingyan.android.afc.Main4YunshuActivity;
 import cc.xingyan.android.afc.Main4YunshuUploadedDetailActivity;
 import cc.xingyan.android.afc.MainActivity;
@@ -112,7 +114,7 @@ public interface ComponentInjector {
     void inject(ChangePasswordActivity.ChangePwdFragment t);
     void inject(ChangeWorkRemindActivity.ChangeWorkRemindFragment t);
 //
-//    void inject(HomeFragment t);
+    void inject(HomeFragment t);
 //
 //    void inject(WorkOrderEditorFragment t);
 //
@@ -180,7 +182,7 @@ public interface ComponentInjector {
     void inject(PartYunShuUploadedLineFragment t);
     void inject(PartYunshuNoUploadFragment t);
     void inject(PartYunshuUploadedFragment t);
-//    void inject(Main4PankuReportManagementActivity t);
+    void inject(Main4PankuReportManagementActivity t);
     void inject(Main4YunshuActivity t);
     void inject(Main4YunshuUploadedDetailActivity t);
 

@@ -101,6 +101,12 @@ public class PartYunshuNoUploadFragment extends BaseFragment {
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         PartYunshuUploadedFragment.isUploadedFragmentShow = false;
     }
 
@@ -690,7 +696,7 @@ public class PartYunshuNoUploadFragment extends BaseFragment {
     class PagerAdapter extends FragmentPagerAdapter {
 
         public PagerAdapter() {
-            super(getChildFragmentManager());
+            super(getChildFragmentManager(),BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         }
 
         @Override

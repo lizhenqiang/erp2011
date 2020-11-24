@@ -116,42 +116,48 @@ public class PartYunShuUploadedLineFragment extends BaseFragment {
         super.setUserVisibleHint(isVisibleToUser);
         if (isVisibleToUser) {
 
-            addSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    String taskType = "2";
-                    boolean isHasPartYunshuNoUpload = false;
-                    YunshuHeadSelection headSelection = new YunshuHeadSelection();
-                    YunshuHeadCursor headCursor = headSelection.query(getContext().getContentResolver());
-                    try {
-                        while(headCursor.moveToNext()){
-                            taskType = headCursor.getTransportTaskType();
-                            if(taskType.equals("0")){
-                                isHasPartYunshuNoUpload = true;
-                                break;
-                            }
-                        }
-                    } finally {
-                        headCursor.close();
-                    }
 
-                    if (isChecked) {
-                        if(isHasPartYunshuNoUpload){
-                            Toast.makeText(getContext(), "已经有未上传的货盘运输，请先上传完毕再添加！", Toast.LENGTH_SHORT).show();
-                            addSwitch.setChecked(false);
-                            return;
-                        }
-                        isYunShuLineUploadedFragmentVisible = true;
-                    } else {
-                        isYunShuLineUploadedFragmentVisible = false;
-                    }
-                }
-            });
-
-            PartPanKuFragment.isPankuFragmentVisible = false;
-            LogUtil.info("PartYunShuLineFragment_Scan", "isYunShuLineUploadedFragmentVisible>> " + isYunShuLineUploadedFragmentVisible);
 
         }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        addSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                String taskType = "2";
+                boolean isHasPartYunshuNoUpload = false;
+                YunshuHeadSelection headSelection = new YunshuHeadSelection();
+                YunshuHeadCursor headCursor = headSelection.query(getContext().getContentResolver());
+                try {
+                    while(headCursor.moveToNext()){
+                        taskType = headCursor.getTransportTaskType();
+                        if(taskType.equals("0")){
+                            isHasPartYunshuNoUpload = true;
+                            break;
+                        }
+                    }
+                } finally {
+                    headCursor.close();
+                }
+
+                if (isChecked) {
+                    if(isHasPartYunshuNoUpload){
+                        Toast.makeText(getContext(), "已经有未上传的货盘运输，请先上传完毕再添加！", Toast.LENGTH_SHORT).show();
+                        addSwitch.setChecked(false);
+                        return;
+                    }
+                    isYunShuLineUploadedFragmentVisible = true;
+                } else {
+                    isYunShuLineUploadedFragmentVisible = false;
+                }
+            }
+        });
+
+        PartPanKuFragment.isPankuFragmentVisible = false;
+        LogUtil.info("PartYunShuLineFragment_Scan", "isYunShuLineUploadedFragmentVisible>> " + isYunShuLineUploadedFragmentVisible);
     }
 
     @Override

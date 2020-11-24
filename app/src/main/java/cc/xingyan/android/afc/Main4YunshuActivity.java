@@ -112,7 +112,7 @@ public class Main4YunshuActivity extends FragmentActivity {
         private List<Fragment> fragmentList;
 
         public MyPartPagerAdapter(FragmentManager fm, List<Fragment> fragmentList) {
-            super(fm);
+            super(fm,BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
             this.fragmentList = fragmentList;
         }
 

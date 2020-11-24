@@ -27,3 +27,7 @@ A8:android10无法通过getDeviceId获取设备id,只能获取androidId,androidI
 Q9:setUserVisbleHint过时问题
 A9:If you need this method because you try to detect which fragment is currently visible in ViewPager. You can now just use onResume and onPause methods instead but before that you should change default behaviour in FragmentPagerAdapter constructor.
 like this :FragmentPagerAdapter(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT)
+
+
+Q10: Error inflating class android.support.design.widget.TabLayout
+A10: 用com.google.android.material.tabs.TabLayout 替换 android.support.design.widget.TabLayout
