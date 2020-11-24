@@ -168,12 +168,12 @@
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
             android:theme="@style/Theme.Afc.Main"/>
 
-<!--        <activity-->
-<!--            android:name=".WorkOrderActivity"-->
-<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
-<!--            android:label="@string/title_activity_work_order"-->
-<!--            android:screenOrientation="portrait"-->
-<!--            android:windowSoftInputMode="stateHidden" />-->
+        <activity
+            android:name=".WorkOrderActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:label="@string/title_activity_work_order"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
 
 <!--        <activity-->
 <!--            android:name=".CmWorkActivity"-->
@@ -250,12 +250,12 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
 
-<!--        <activity-->
-<!--            android:name=".ScanActivity"-->
-<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
-<!--            android:label="@string/activity_scan"-->
-<!--            android:screenOrientation="portrait"-->
-<!--            android:theme="@android:style/Theme.Dialog"/>-->
+        <activity
+            android:name=".ScanActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:label="@string/activity_scan"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"/>
 
 <!--        <activity-->
 <!--            android:name=".ScanActivityForCamera"-->

@@ -92,6 +92,10 @@ import cc.xingyan.android.afc.PartYunshuNoUploadFragment;
 import cc.xingyan.android.afc.PartYunshuUploadedFragment;
 import cc.xingyan.android.afc.SettingsActivity;
 import cc.xingyan.android.afc.SyncActivity;
+import cc.xingyan.android.afc.WorkOrderEditorFragment;
+import cc.xingyan.android.afc.WorkOrderFragment;
+import cc.xingyan.android.afc.WorkOrderListFragment;
+import cc.xingyan.android.afc.adapter.WorkOrderAdapter;
 import cc.xingyan.android.afc.receiver.NetworkStatusReceiver;
 import cc.xingyan.android.afc.service.SyncService;
 import cc.xingyan.android.afc.service.WorkRemindService;
@@ -116,11 +120,11 @@ public interface ComponentInjector {
 //
     void inject(HomeFragment t);
 //
-//    void inject(WorkOrderEditorFragment t);
-//
-//    void inject(WorkOrderAdapter.WorkOrderViewHolder t);
-//
-//    void inject(WorkOrderListFragment t);
+    void inject(WorkOrderEditorFragment t);
+
+    void inject(WorkOrderAdapter.WorkOrderViewHolder t);
+
+    void inject(WorkOrderListFragment t);
 //
 //    void inject(PmWorkListFragment t);
 //    void inject(PmWorkNewFragment t);
@@ -135,7 +139,7 @@ public interface ComponentInjector {
 //    void inject(PmWorkUploadImageFragment t);
 //    void inject(PmWorkEditorFragment t);
 //
-//    void inject(WorkOrderFragment t);
+    void inject(WorkOrderFragment t);
 //
 //    void inject(PmFragment t);
 //
