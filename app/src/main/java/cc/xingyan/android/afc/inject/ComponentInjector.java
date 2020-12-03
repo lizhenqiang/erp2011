@@ -74,6 +74,18 @@ import javax.inject.Singleton;
 //import cc.xingyan.android.afc.service.WorkRemindService;
 import cc.xingyan.android.afc.ChangePasswordActivity;
 import cc.xingyan.android.afc.ChangeWorkRemindActivity;
+import cc.xingyan.android.afc.CmFaultConfirmFragment;
+import cc.xingyan.android.afc.CmFaultFragment;
+import cc.xingyan.android.afc.CmFragment;
+import cc.xingyan.android.afc.CmMaterialFragment;
+import cc.xingyan.android.afc.CmReportFragment;
+import cc.xingyan.android.afc.CmWorkDeleteFragment;
+import cc.xingyan.android.afc.CmWorkEditerConfirmFragment;
+import cc.xingyan.android.afc.CmWorkEditerFragment;
+import cc.xingyan.android.afc.CmWorkEditerNewFragment;
+import cc.xingyan.android.afc.CmWorkListFragment;
+import cc.xingyan.android.afc.CmWorkReportFragment;
+import cc.xingyan.android.afc.DayInspectWorkPmItemImgFragment;
 import cc.xingyan.android.afc.HomeFragment;
 import cc.xingyan.android.afc.LoginActivity;
 import cc.xingyan.android.afc.Main4ChartForWebActivity;
@@ -90,6 +102,8 @@ import cc.xingyan.android.afc.PartYunShuUploadedHeadFragment;
 import cc.xingyan.android.afc.PartYunShuUploadedLineFragment;
 import cc.xingyan.android.afc.PartYunshuNoUploadFragment;
 import cc.xingyan.android.afc.PartYunshuUploadedFragment;
+import cc.xingyan.android.afc.PmWorkEditorImageAfterWorkFragment;
+import cc.xingyan.android.afc.PmWorkEditorImageBeforeWorkFragment;
 import cc.xingyan.android.afc.SettingsActivity;
 import cc.xingyan.android.afc.SyncActivity;
 import cc.xingyan.android.afc.WorkOrderEditorFragment;
@@ -133,8 +147,8 @@ public interface ComponentInjector {
 //    void inject(PmWorkNewMaterialFragment t);
 //    void inject(PmWorkEditorContentFragment t);
 //    void inject(PmWorkEditorImageFragment t);
-//    void inject(PmWorkEditorImageBeforeWorkFragment t);
-//    void inject(PmWorkEditorImageAfterWorkFragment t);
+    void inject(PmWorkEditorImageBeforeWorkFragment t);
+    void inject(PmWorkEditorImageAfterWorkFragment t);
 //    void inject(PmWorkUploadedFragment t);
 //    void inject(PmWorkUploadImageFragment t);
 //    void inject(PmWorkEditorFragment t);
@@ -152,7 +166,7 @@ public interface ComponentInjector {
 //    void inject(DayInspectWorkPmFragment t);
 //
 //    void inject(DayInspectWorkPmItemContentFragment t);
-//    void inject(DayInspectWorkPmItemImgFragment t);
+    void inject(DayInspectWorkPmItemImgFragment t);
 //
 //    void inject(DayInspectWorkActivity t);
 //
@@ -163,17 +177,17 @@ public interface ComponentInjector {
 //
     void inject(NetworkStatusReceiver t);
 //
-//    void inject(CmFragment t);
-//    void inject(CmWorkListFragment t);
-//    void inject(CmFaultFragment t);
-//    void inject(CmWorkEditerNewFragment t);
-//    void inject(CmFaultConfirmFragment t);
-//    void inject(CmWorkEditerConfirmFragment t);
-//    void inject(CmReportFragment t);
-//    void inject(CmWorkEditerFragment t);
-//    void inject(CmMaterialFragment t);
-//    void inject(CmWorkReportFragment t);
-//    void inject(CmWorkDeleteFragment t);
+    void inject(CmFragment t);
+    void inject(CmWorkListFragment t);
+    void inject(CmFaultFragment t);
+    void inject(CmWorkEditerNewFragment t);
+    void inject(CmFaultConfirmFragment t);
+    void inject(CmWorkEditerConfirmFragment t);
+    void inject(CmReportFragment t);
+    void inject(CmWorkEditerFragment t);
+    void inject(CmMaterialFragment t);
+    void inject(CmWorkReportFragment t);
+    void inject(CmWorkDeleteFragment t);
 //    void inject(CmWorkReleasedFragment t);
 //    void inject(CmFaultReleasedorChangeFragment t);
 //

@@ -43,11 +43,11 @@ import retrofit.RxJavaCallAdapterFactory;
  */
 public class AfcApplication extends MultiDexApplication {
 
-//        public static final String DEFAULT_BASE_URL = "http://pda.mtd-bj.com:8832/Service1.svc/json/";    //常用测试库
+        public static final String DEFAULT_BASE_URL = "http://pda.mtd-bj.com:8832/Service1.svc/json/";    //常用测试库
 //    public static final String DEFAULT_BASE_URL = "http://192.168.4.194:2201/Service1.svc/json/";
 //    public static final String DEFAULT_BASE_URL = "http://pda.mtd-bj.com:8833/Service1.svc/json/";    //正式库——慎用
 
-    public static final String DEFAULT_BASE_URL = "http://192.168.3.110:2201/Service1.svc/json/";       //本机
+//    public static final String DEFAULT_BASE_URL = "http://192.168.3.110:2201/Service1.svc/json/";       //本机
 
 
 //    public static final String DEFAULT_BASE_URL = "http://pda.mtd-bj.com" + BuildConfig.SERVER_PORT + "/Service1.svc/json/";   //发布时使用

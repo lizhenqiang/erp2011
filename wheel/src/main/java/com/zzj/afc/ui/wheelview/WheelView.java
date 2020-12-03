@@ -32,8 +32,6 @@ import android.view.ViewGroup.LayoutParams;
 import android.view.animation.Interpolator;
 import android.widget.LinearLayout;
 
-import androidx.core.content.ContextCompat;
-
 import com.zzj.afc.R;
 
 import java.util.LinkedList;
@@ -483,7 +481,7 @@ public class WheelView extends View {
 	 */
 	public void setWheelForeground(int resource) {
 		wheelForeground = resource;
-		centerDrawable = ContextCompat.getDrawable(getContext(),
+		centerDrawable = getContext().getResources().getDrawable(
 				wheelForeground);
 	}
 
@@ -513,7 +511,7 @@ public class WheelView extends View {
 	 */
 	private void initResourcesIfNecessary() {
 		if (centerDrawable == null) {
-			centerDrawable = ContextCompat.getDrawable(getContext(),
+			centerDrawable = getContext().getResources().getDrawable(
 					wheelForeground);
 		}
 

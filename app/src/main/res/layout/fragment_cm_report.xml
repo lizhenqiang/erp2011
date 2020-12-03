@@ -19,7 +19,7 @@
         android:focusableInTouchMode="true">
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -29,13 +29,15 @@
             <AutoCompleteTextView
                 android:id="@+id/intcustomer_no"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:editable="false"
                 android:hint="@string/hint_material_intcustomer_no"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="gone"
@@ -48,9 +50,9 @@
                 android:editable="false"
                 android:hint="是否上表"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -58,14 +60,16 @@
             <AutoCompleteTextView
                 android:id="@+id/cm_equipfault"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:editable="false"
                 android:hint="故障分类"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -75,14 +79,16 @@
             <AutoCompleteTextView
                 android:id="@+id/fault_grade"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:editable="false"
                 android:hint="@string/hint_fault_grade"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -90,15 +96,17 @@
             <AutoCompleteTextView
                 android:id="@+id/fault_description_report"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:editable="false"
                 android:hint="@string/hint_fault_description"
                 android:minHeight="40dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -106,13 +114,15 @@
             <AutoCompleteTextView
                 android:id="@+id/fault_type"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:editable="false"
                 android:hint="@string/hint_fault_class"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -120,13 +130,15 @@
             <AutoCompleteTextView
                 android:id="@+id/fault_cause"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:editable="false"
                 android:hint="@string/hint_fault_reason"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -134,13 +146,15 @@
             <AutoCompleteTextView
                 android:id="@+id/operation"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:editable="false"
                 android:hint="@string/hint_operation"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -148,13 +162,15 @@
             <AutoCompleteTextView
                 android:id="@+id/work_done"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:editable="false"
                 android:hint="@string/hint_work_done"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-      <!--  <android.support.design.widget.TextInputLayout
+      <!--  <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -167,9 +183,9 @@
                 android:minHeight="40dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-        </android.support.design.widget.TextInputLayout>-->
+        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -180,9 +196,9 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/hint_fault_reason_note"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -193,9 +209,9 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/hint_work_note"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_operation_start_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -208,9 +224,9 @@
                 android:editable="false"
                 android:hint="@string/hint_operation_start_time"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_operation_end_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -223,7 +239,7 @@
                 android:editable="false"
                 android:hint="@string/hint_operation_end_time"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <include
             layout="@layout/fragment_cm_report_photo"
@@ -236,7 +252,7 @@
             android:layout_marginTop="15dp"
             android:text="点击选择上传照片"/>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -252,7 +268,7 @@
                 android:hint="@string/hint_dispose_person"
                 android:minHeight="40dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
 </ScrollView>

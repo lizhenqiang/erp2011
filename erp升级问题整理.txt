@@ -31,3 +31,10 @@ like this :FragmentPagerAdapter(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FR
 
 Q10: Error inflating class android.support.design.widget.TabLayout
 A10: 用com.google.android.material.tabs.TabLayout 替换 android.support.design.widget.TabLayout
+
+
+Q11: Binary XML file line #5: Error inflating class android.support.design.widget.CoordinatorLayout
+A11:androidx.coordinatorlayout.widget.CoordinatorLayout 替换 android.support.design.widget.CoordinatorLayout
+
+Q12:com.google.android.material.textfield.TextInputLayout中AutoCompleteTextView显示异常问题。
+A12:用EditText替换AutoCompleteTextView

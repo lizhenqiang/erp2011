@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card"
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             style="@style/Widget.Afc.Toolbar.Card"
             android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                 android:layout_weight="1"
                 android:padding="10dp">
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/in_material_name">
@@ -45,12 +45,14 @@
                     <AutoCompleteTextView
                         android:id="@+id/material_name"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="50dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="bottom"
                         android:hint="@string/hint_material_name"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/in_material_code"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -63,9 +65,9 @@
                         android:editable="false"
                         android:hint="@string/hint_material_code"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/in_material_num"
                     android:layout_below="@id/in_material_code"
                     android:layout_width="match_parent"
@@ -78,9 +80,9 @@
                         android:numeric="integer"
                         android:hint="@string/hint_material_num"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/input_material_apply_time"
                     android:layout_below="@id/in_material_num"
                     android:layout_width="match_parent"
@@ -89,14 +91,16 @@
                     <AutoCompleteTextView
                         android:id="@+id/material_apply_time"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="50dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="bottom"
                         android:editable="false"
                         android:hint="@string/hint_material_apply_time"
                         android:minHeight="40dp"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
 
-</android.support.v7.widget.CardView>
+</androidx.cardview.widget.CardView>
