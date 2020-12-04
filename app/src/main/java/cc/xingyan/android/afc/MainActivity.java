@@ -197,12 +197,13 @@ public class MainActivity extends TitleActivity implements NavigationView.OnNavi
                 fm.beginTransaction().replace(R.id.fragment_container, new CmFragment()).commitAllowingStateLoss();
             }
         }
-//        else if (itemId == R.id.nav_pm) {
-//            mCheckedNavItemId = itemId;
-//            if (!(fragment instanceof PmFragment)) {
-//                fm.beginTransaction().replace(R.id.fragment_container, new PmFragment()).commitAllowingStateLoss();
-//            }
-//        } else if (itemId == R.id.nav_di) {
+        else if (itemId == R.id.nav_pm) {
+            mCheckedNavItemId = itemId;
+            if (!(fragment instanceof PmFragment)) {
+                fm.beginTransaction().replace(R.id.fragment_container, new PmFragment()).commitAllowingStateLoss();
+            }
+        }
+//        else if (itemId == R.id.nav_di) {
 //            mCheckedNavItemId = itemId;
 //            if (!(fragment instanceof DayInspectFragment)) {
 //                fm.beginTransaction().replace(R.id.fragment_container, new DayInspectWorkFragment()).commitAllowingStateLoss();

@@ -20,7 +20,7 @@
         android:paddingTop="@dimen/page_vertical_spacing"
         >
 
-        <android.support.v7.widget.GridLayout
+        <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -37,7 +37,7 @@
                 app:layout_gravity="center" />
 
 
-        </android.support.v7.widget.GridLayout>
+        </androidx.gridlayout.widget.GridLayout>
 
     </LinearLayout>
 
@@ -47,13 +47,13 @@
         android:layout_above="@id/linearLayout_btn"
         android:orientation="vertical">
 
-        <android.support.design.widget.TabLayout
+        <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_pm_fault_report_confirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:tabMode="scrollable" />
 
-        <androidx.core.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/view_pager_pm_fault_report_confirm"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

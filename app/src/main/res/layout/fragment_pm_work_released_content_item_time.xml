@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/pm_work_item_operation_start_time_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,9 +19,9 @@
             android:focusable="false"
             android:hint="@string/hint_operation_start_time"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/pm_work_item_operation_end_time_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
             android:focusable="false"
             android:hint="@string/hint_operation_end_time"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 </LinearLayout>

@@ -102,8 +102,19 @@ import cc.xingyan.android.afc.PartYunShuUploadedHeadFragment;
 import cc.xingyan.android.afc.PartYunShuUploadedLineFragment;
 import cc.xingyan.android.afc.PartYunshuNoUploadFragment;
 import cc.xingyan.android.afc.PartYunshuUploadedFragment;
+import cc.xingyan.android.afc.PmFragment;
+import cc.xingyan.android.afc.PmWorkEditorContentFragment;
+import cc.xingyan.android.afc.PmWorkEditorFragment;
 import cc.xingyan.android.afc.PmWorkEditorImageAfterWorkFragment;
 import cc.xingyan.android.afc.PmWorkEditorImageBeforeWorkFragment;
+import cc.xingyan.android.afc.PmWorkEditorImageFragment;
+import cc.xingyan.android.afc.PmWorkListFragment;
+import cc.xingyan.android.afc.PmWorkNewContentFragment;
+import cc.xingyan.android.afc.PmWorkNewDeviceInfoFragment;
+import cc.xingyan.android.afc.PmWorkNewFragment;
+import cc.xingyan.android.afc.PmWorkNewMaterialFragment;
+import cc.xingyan.android.afc.PmWorkUploadImageFragment;
+import cc.xingyan.android.afc.PmWorkUploadedFragment;
 import cc.xingyan.android.afc.SettingsActivity;
 import cc.xingyan.android.afc.SyncActivity;
 import cc.xingyan.android.afc.WorkOrderEditorFragment;
@@ -140,22 +151,22 @@ public interface ComponentInjector {
 
     void inject(WorkOrderListFragment t);
 //
-//    void inject(PmWorkListFragment t);
-//    void inject(PmWorkNewFragment t);
-//    void inject(PmWorkNewDeviceInfoFragment t);
-//    void inject(PmWorkNewContentFragment t);
-//    void inject(PmWorkNewMaterialFragment t);
-//    void inject(PmWorkEditorContentFragment t);
-//    void inject(PmWorkEditorImageFragment t);
+    void inject(PmWorkListFragment t);
+    void inject(PmWorkNewFragment t);
+    void inject(PmWorkNewDeviceInfoFragment t);
+    void inject(PmWorkNewContentFragment t);
+    void inject(PmWorkNewMaterialFragment t);
+    void inject(PmWorkEditorContentFragment t);
+    void inject(PmWorkEditorImageFragment t);
     void inject(PmWorkEditorImageBeforeWorkFragment t);
     void inject(PmWorkEditorImageAfterWorkFragment t);
-//    void inject(PmWorkUploadedFragment t);
-//    void inject(PmWorkUploadImageFragment t);
-//    void inject(PmWorkEditorFragment t);
+    void inject(PmWorkUploadedFragment t);
+    void inject(PmWorkUploadImageFragment t);
+    void inject(PmWorkEditorFragment t);
 //
     void inject(WorkOrderFragment t);
 //
-//    void inject(PmFragment t);
+    void inject(PmFragment t);
 //
 //    void inject(DayInspectEditorFragment t);
 //

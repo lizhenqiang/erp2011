@@ -14,7 +14,7 @@
         android:paddingLeft="@dimen/page_horizontal_spacing"
         android:paddingRight="@dimen/page_horizontal_spacing"
         android:paddingTop="@dimen/page_vertical_spacing">
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -30,9 +30,9 @@
                 android:hint="@string/hint_device_number"
                 android:minHeight="40dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -40,7 +40,9 @@
             <AutoCompleteTextView
                 android:id="@+id/pm_fault_report_confirm_device_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:background="@android:color/transparent"
                 android:editable="false"
                 android:focusable="false"
@@ -48,9 +50,9 @@
                 android:hint="@string/hint_device_name"
                 android:minHeight="40dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -66,9 +68,9 @@
                 android:hint="@string/hint_physic__number"
                 android:minHeight="40dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -76,16 +78,20 @@
             <AutoCompleteTextView
                 android:id="@+id/pm_fault_report_confirm_device_physic_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:background="@android:color/transparent"
                 android:editable="false"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:hint="@string/hint_physic__name"
                 android:minHeight="40dp"
+                android:singleLine="true"
+                android:ellipsize="end"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -93,7 +99,9 @@
             <AutoCompleteTextView
                 android:id="@+id/pm_fault_report_confirm_plan_start_time"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:background="@android:color/transparent"
                 android:editable="false"
                 android:focusable="false"
@@ -101,8 +109,8 @@
                 android:hint="@string/hint_plan_start_time"
                 android:minHeight="40dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -110,7 +118,9 @@
             <AutoCompleteTextView
                 android:id="@+id/pm_fault_report_confirm_plan_end_time"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:background="@android:color/transparent"
                 android:editable="false"
                 android:focusable="false"
@@ -118,8 +128,8 @@
                 android:hint="@string/hint_plan_end_time"
                 android:minHeight="40dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -127,7 +137,9 @@
             <AutoCompleteTextView
                 android:id="@+id/pm_fault_report_confirm_prepareman"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:background="@android:color/transparent"
                 android:editable="false"
                 android:focusable="false"
@@ -135,6 +147,6 @@
                 android:hint="@string/hint_prepare_man"
                 android:minHeight="40dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 </ScrollView>

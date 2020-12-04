@@ -192,18 +192,18 @@
 
 <!--        <activity android:name=".photoutil.album.ImageFileActivity"></activity>-->
 
-<!--        <activity-->
-<!--            android:name=".PmWorkActivity"-->
-<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
-<!--            android:label="@string/title_activity_pm_job"-->
-<!--            android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".PmWorkActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:label="@string/title_activity_pm_job"
+            android:screenOrientation="portrait" />
 
-<!--        <activity-->
-<!--            android:name=".PmWorkQueryActivity"-->
-<!--            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"-->
-<!--            android:label="PM工单查询"-->
-<!--            android:screenOrientation="portrait"-->
-<!--            android:theme="@style/DialogTheme"/>-->
+        <activity
+            android:name=".PmWorkQueryActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize"
+            android:label="PM工单查询"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"/>
 
 <!--        <activity-->
 <!--            android:name=".DayInspectEditorActivity"-->
