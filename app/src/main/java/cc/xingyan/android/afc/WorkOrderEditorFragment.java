@@ -771,8 +771,8 @@ public class WorkOrderEditorFragment extends BaseFragment implements Action.Inte
             }
         };
         fieldView.setOnClickListener(onClickListener);
-        if (fieldView.getParent() instanceof TextInputLayout) {
-            ((TextInputLayout) fieldView.getParent()).setOnClickListener(onClickListener);
+        if (fieldView.getParent().getParent() instanceof TextInputLayout) {
+            ((TextInputLayout) fieldView.getParent().getParent()).setOnClickListener(onClickListener);
         }
 
         fieldView.setOnFocusChangeListener((view, hasFocus) -> {
@@ -811,7 +811,7 @@ public class WorkOrderEditorFragment extends BaseFragment implements Action.Inte
             @Override
             public void afterTextChanged(Editable s) {
                 mEdited = true;
-                final ViewParent parent = fieldView.getParent();
+                final ViewParent parent = fieldView.getParent().getParent();
                 if (parent instanceof TextInputLayout) {
                     ((TextInputLayout) parent).setError(null);
                     ((TextInputLayout) parent).setErrorEnabled(false);
@@ -819,8 +819,11 @@ public class WorkOrderEditorFragment extends BaseFragment implements Action.Inte
 
 
                 if (fieldView.getId() == R.id.fault_description) {
-                    mFaultNoteView
+                    ((TextInputLayout)mFaultNoteView.getParent().getParent())
                             .setVisibility("其他".equals(s.toString()) || "其它".equals(s.toString()) ? View.VISIBLE : View.GONE);
+
+                    mFaultNoteView.setVisibility("其他".equals(s.toString()) || "其它".equals(s.toString()) ? View.VISIBLE : View.GONE);
+
 
                 }
             }
@@ -894,6 +897,7 @@ public class WorkOrderEditorFragment extends BaseFragment implements Action.Inte
 
         if (mFaultNoteView.getVisibility() == View.VISIBLE && !checkRequiredFieldView(mFaultNoteView)) {
             ok = false;
+
         }
 
         for (TextView fieldView : new TextView[]{
@@ -992,7 +996,7 @@ public class WorkOrderEditorFragment extends BaseFragment implements Action.Inte
 
     private boolean checkRequiredFieldView(TextView fieldView) {
         if (TextUtils.isEmpty(fieldView.getText())) {
-            final TextInputLayout inputLayout = ((TextInputLayout) fieldView.getParent());
+            final TextInputLayout inputLayout = ((TextInputLayout) fieldView.getParent().getParent());
             inputLayout.setErrorEnabled(true);
             inputLayout.setError(getString(R.string.error_required));
             return false;

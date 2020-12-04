@@ -8,7 +8,7 @@
   ~ This file is originally created by San.
   -->
 
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Caption"
             android:textColor="@color/accent" />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -40,13 +40,15 @@
             <AutoCompleteTextView
                 android:id="@+id/device_code"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:hint="@string/hint_device_number"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -54,15 +56,17 @@
             <AutoCompleteTextView
                 android:id="@+id/device_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
 
 
 
                 android:hint="@string/hint_device_name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -70,12 +74,14 @@
             <AutoCompleteTextView
                 android:id="@+id/physic_code_word_order"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:hint="@string/hint_physic__number"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -83,13 +89,15 @@
             <AutoCompleteTextView
                 android:id="@+id/physic_name_word_order"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
                 android:hint="@string/hint_physic__name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
     </LinearLayout>
-</android.support.v7.widget.CardView>
+</androidx.cardview.widget.CardView>
 
     <!--android:editable="false" -->
